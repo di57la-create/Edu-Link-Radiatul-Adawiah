@@ -1,7 +1,17 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin.html"
+  status = 200
+
 [[headers]]
-  for = "/data/*"
+  for = "/*.json"
   [headers.values]
     Cache-Control = "no-cache"

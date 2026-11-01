@@ -81,7 +81,7 @@
     return box;
   }
   function loadJSON() {
-    return fetch('data/bab-tambahan.json', { cache: 'no-cache' }).then(function (r) {
+    return fetch('bab-tambahan.json', { cache: 'no-cache' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     }).then(function (j) { return listOf(j && j.bab); });

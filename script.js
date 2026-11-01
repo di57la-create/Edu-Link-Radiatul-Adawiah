@@ -305,8 +305,8 @@
 
   function loadAdminData() {
     if (!window.fetch) return Promise.resolve(baseCfg);
-    var jobs = [getJSON('data/umum.json').catch(function () { return null; })];
-    if (babNo) jobs.push(getJSON('data/bab' + babNo + '.json').catch(function () { return null; }));
+    var jobs = [getJSON('umum.json').catch(function () { return null; })];
+    if (babNo) jobs.push(getJSON('bab' + babNo + '.json').catch(function () { return null; }));
     return Promise.all(jobs).then(function (res) {
       var u = res[0], b = res[1];
       if (!u && !b) return baseCfg;
