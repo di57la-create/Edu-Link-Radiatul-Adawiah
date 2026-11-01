@@ -1,0 +1,535 @@
+{
+  "bab": [
+    {
+      "judul": "Informatika untuk Masa Depan",
+      "ringkas": "Peran informatika, teknologi masa depan, etika, dan keterampilan digital.",
+      "pengantar": "Informatika hadir dalam kehidupan sehari-hari, dunia kerja, pendidikan, layanan publik, dan perkembangan teknologi masa depan.",
+      "mapel": "Informatika",
+      "kelas": "X / Fase E",
+      "alokasi": "2 × 45 menit",
+      "tujuan": [
+        "Menjelaskan peran informatika dalam kehidupan dan masyarakat.",
+        "Mengenali perkembangan teknologi digital dan peluang masa depan.",
+        "Menjelaskan pentingnya etika, tanggung jawab, dan literasi digital.",
+        "Mengidentifikasi keterampilan yang diperlukan untuk menghadapi perubahan teknologi."
+      ],
+      "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+      "pemantik_pengantar": "Bayangkan satu pagimu: alarm di ponsel, peta menuju sekolah, belajar daring, lalu membayar jajan dengan dompet digital. Berapa banyak layanan digital yang sudah kamu pakai sebelum siang?",
+      "pemantik": [
+        "Apa yang sudah kamu ketahui tentang topik ini?",
+        "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+        "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+      ],
+      "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+      "materi": "## 1. Apa itu informatika?\n\nInformatika adalah bidang ilmu yang mempelajari komputasi, pengolahan informasi, sistem komputer, data, algoritma, dan dampaknya bagi manusia. Informatika tidak hanya tentang menggunakan komputer, tetapi juga memahami cara teknologi dirancang dan dimanfaatkan untuk memecahkan masalah.\n\n## 2. Informatika di sekitar kita\n\nContohnya adalah layanan perbankan digital, peta dan navigasi, pembelajaran daring, layanan kesehatan, perdagangan elektronik, transportasi, serta komunikasi. Teknologi membantu pekerjaan menjadi lebih cepat, tetapi pengguna tetap perlu memeriksa kebenaran informasi dan menjaga data pribadi.\n\n## 3. Perkembangan dan peluang masa depan\n\n- **Kecerdasan buatan (AI):** membantu mengenali pola, membuat rekomendasi, dan mendukung pekerjaan.\n- **Internet of Things (IoT):** menghubungkan benda fisik dengan jaringan untuk mengirim atau menerima data.\n- **Komputasi awan:** layanan penyimpanan dan pemrosesan melalui internet.\n- **Robotika dan otomasi:** membantu pekerjaan berulang atau berisiko.\n- **Keamanan siber:** melindungi sistem, jaringan, dan data dari ancaman.\n\n## 4. Etika dan tanggung jawab digital\n\nGunakan teknologi secara jujur, santun, dan bertanggung jawab. Hormati hak cipta, cantumkan sumber, jangan menyebarkan hoaks, hindari perundungan siber, dan jangan membagikan data pribadi orang lain tanpa izin.\n\n## 5. Keterampilan masa depan\n\nKeterampilan penting meliputi berpikir kritis, kreativitas, komunikasi, kolaborasi, pemecahan masalah, literasi data, literasi digital, dan kemauan belajar sepanjang hayat. Teknologi dapat berubah, sehingga kemampuan beradaptasi sangat diperlukan.",
+      "materi_tautan": [],
+      "video": [],
+      "praktik": "## Peta Informatika di Sekitarku\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Pilih tiga layanan digital yang kamu pakai seminggu terakhir (misalnya peta, belajar daring, pembayaran digital).\n2. Untuk tiap layanan, tulis: masalah yang dibantu diselesaikan, data apa yang dipakai, dan satu risiko privasi atau etika.\n3. Pilih satu teknologi masa depan (AI, IoT, komputasi awan, robotika, atau keamanan siber), lalu jelaskan bagaimana teknologi itu dapat mengubah salah satu layanan tadi.\n4. Rumuskan tiga aturan pribadimu agar memakai teknologi dengan jujur, aman, dan bertanggung jawab.\n\n**Produk:** tabel tiga layanan beserta tiga aturan pribadi.",
+      "praktik_tautan": [],
+      "kuis": [
+        {
+          "pertanyaan": "Mengapa memahami informatika penting bagi generasi muda?",
+          "opsi_a": "Agar bisa memakai semua aplikasi tanpa perlu tahu cara kerjanya",
+          "opsi_b": "Agar pekerjaan manusia dapat sepenuhnya digantikan perangkat digital",
+          "opsi_c": "Agar mampu memahami, menilai, dan memanfaatkan teknologi dengan bertanggung jawab",
+          "opsi_d": "Agar tidak perlu lagi mempelajari keterampilan nonteknis seperti komunikasi",
+          "jawaban": "c",
+          "pembahasan": "Informatika bukan sekadar memakai perangkat. Kita perlu memahami cara kerja teknologi agar dapat menilai dan memanfaatkannya secara bertanggung jawab."
+        },
+        {
+          "pertanyaan": "Sensor suhu, lampu pintar, dan jam tangan pintar yang terhubung ke jaringan untuk mengirim dan menerima data merupakan contoh ...",
+          "opsi_a": "Robotika",
+          "opsi_b": "Komputasi awan",
+          "opsi_c": "Kecerdasan buatan (AI)",
+          "opsi_d": "Internet of Things (IoT)",
+          "jawaban": "d",
+          "pembahasan": "IoT menghubungkan benda fisik ke jaringan agar dapat bertukar data. Komputasi awan adalah layanan penyimpanan dan pemrosesan lewat internet, sedangkan AI berfokus pada pengenalan pola dan rekomendasi."
+        },
+        {
+          "pertanyaan": "Tindakan yang mencerminkan etika digital adalah ...",
+          "opsi_a": "Meminta izin dan mencantumkan sumber saat memakai karya orang lain",
+          "opsi_b": "Membagikan tangkapan layar percakapan pribadi agar teman lain ikut menilai",
+          "opsi_c": "Menyalin tulisan dari internet lalu mengakuinya sebagai karya sendiri",
+          "opsi_d": "Meminjamkan kata sandi akun kelas kepada teman supaya tugasnya cepat selesai",
+          "jawaban": "a",
+          "pembahasan": "Etika digital berarti menghormati hak cipta dan privasi orang lain serta menjaga keamanan akun."
+        },
+        {
+          "pertanyaan": "Teknologi terus berubah. Sikap yang paling membantu kita menghadapinya adalah ...",
+          "opsi_a": "Menguasai satu aplikasi saja dan menolak mencoba yang lain",
+          "opsi_b": "Terus belajar, beradaptasi, dan mengasah berpikir kritis",
+          "opsi_c": "Menunggu bertahun-tahun sampai teknologi baru benar-benar stabil",
+          "opsi_d": "Mengandalkan teman untuk mengerjakan semua urusan digital",
+          "jawaban": "b",
+          "pembahasan": "Karena teknologi cepat berubah, kemampuan belajar sepanjang hayat dan beradaptasi lebih penting daripada menguasai satu alat saja."
+        },
+        {
+          "pertanyaan": "Cara yang tepat memakai AI untuk membantu belajar adalah ...",
+          "opsi_a": "Menyalin hasilnya apa adanya karena AI pasti benar",
+          "opsi_b": "Memasukkan data pribadi teman agar jawabannya lebih sesuai",
+          "opsi_c": "Memeriksa hasilnya, menyebutkan penggunaannya, dan tetap berpikir sendiri",
+          "opsi_d": "Memakainya agar tidak perlu memahami materi sama sekali",
+          "jawaban": "c",
+          "pembahasan": "AI bisa keliru. Hasilnya perlu diperiksa, penggunaannya disebutkan secara jujur, dan data pribadi orang lain tidak boleh dimasukkan sembarangan."
+        }
+      ],
+      "rubrik": [
+        {
+          "aspek": "Ketepatan konsep",
+          "s4": "Semua konsep tepat dan disertai contoh",
+          "s3": "Sebagian besar konsep tepat",
+          "s2": "Sebagian kecil tepat, ada miskonsepsi",
+          "s1": "Banyak konsep keliru"
+        },
+        {
+          "aspek": "Kelengkapan produk",
+          "s4": "Semua langkah dan produk lengkap",
+          "s3": "Kurang satu langkah",
+          "s2": "Kurang beberapa langkah",
+          "s1": "Sebagian besar kosong"
+        },
+        {
+          "aspek": "Penerapan dan kreativitas",
+          "s4": "Contoh orisinal dan relevan dengan kehidupan",
+          "s3": "Contoh relevan",
+          "s2": "Contoh umum, mengikuti materi",
+          "s1": "Tidak ada contoh"
+        },
+        {
+          "aspek": "Kejujuran dan waktu",
+          "s4": "Karya sendiri, tepat waktu",
+          "s3": "Karya sendiri, sedikit terlambat",
+          "s2": "Sebagian meniru, terlambat",
+          "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+        }
+      ],
+      "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+      "asesmen_tautan": []
+    },
+    {
+      "judul": "Berpikir Komputasional",
+      "ringkas": "Dekomposisi, pengenalan pola, abstraksi, algoritma, dan logika.",
+      "pengantar": "Berpikir komputasional membantu kita menyelesaikan masalah secara logis, terstruktur, dan efisien, baik dengan komputer maupun tanpa komputer.",
+      "mapel": "Informatika",
+      "kelas": "X / Fase E",
+      "alokasi": "2 × 45 menit",
+      "tujuan": [
+        "Menjelaskan konsep berpikir komputasional.",
+        "Menggunakan dekomposisi, pengenalan pola, abstraksi, dan algoritma.",
+        "Menyusun langkah penyelesaian masalah secara runtut.",
+        "Menguji dan memperbaiki solusi sederhana."
+      ],
+      "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+      "pemantik_pengantar": "Berpikir komputasional membantu kita menyelesaikan masalah secara logis, terstruktur, dan efisien, baik dengan komputer maupun tanpa komputer.",
+      "pemantik": [
+        "Apa yang sudah kamu ketahui tentang topik ini?",
+        "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+        "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+      ],
+      "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+      "materi": "## 1. Empat fondasi berpikir komputasional\n\n- **Dekomposisi:** memecah masalah besar menjadi bagian-bagian kecil.\n- **Pengenalan pola:** mencari kesamaan atau kecenderungan dari beberapa masalah.\n- **Abstraksi:** memilih informasi penting dan mengabaikan detail yang tidak relevan.\n- **Algoritma:** menyusun langkah-langkah logis untuk menyelesaikan masalah.\n\n## 2. Contoh dekomposisi\n\nMasalah: menyiapkan kegiatan kelas. Pecah menjadi tugas menentukan jadwal, mendata peserta, menyiapkan perlengkapan, membagi tanggung jawab, dan mengevaluasi kegiatan.\n\n## 3. Pengenalan pola dan abstraksi\n\nJika setiap hari siswa melakukan presensi dengan urutan yang sama, kita dapat mengenali pola prosesnya. Saat membuat peta sekolah, kita cukup menampilkan ruang, jalan, dan pintu penting; warna sepatu setiap orang tidak diperlukan. Itulah abstraksi.\n\n## 4. Algoritma dan representasi\n\nAlgoritma dapat ditulis menggunakan bahasa sehari-hari, pseudocode, atau diagram alir (flowchart). Contoh algoritma menghitung luas persegi: mulai, masukkan sisi, hitung sisi × sisi, tampilkan luas, selesai.\n\n## 5. Logika dan pengujian solusi\n\nGunakan kondisi seperti JIKA–MAKA dan operasi logika AND, OR, serta NOT. Setelah solusi dibuat, uji dengan beberapa masukan, periksa hasil, lalu perbaiki jika ditemukan kesalahan.",
+      "materi_tautan": [],
+      "video": [],
+      "praktik": "## Dekomposisi dan Algoritma Kegiatan Sekolah\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Pilih satu masalah di sekolah (misalnya jadwal piket kelas, menyiapkan upacara, atau belajar kelompok).\n2. Lakukan dekomposisi: pecah menjadi minimal lima subtugas.\n3. Cari pola yang berulang, lalu tentukan informasi yang penting dan yang boleh diabaikan (abstraksi).\n4. Tulis algoritmanya dalam pseudocode atau flowchart, dengan sedikitnya satu percabangan JIKA–MAKA.\n5. Uji dengan dua kasus berbeda, catat hasilnya, dan perbaiki jika ada langkah yang keliru.\n\n**Produk:** dokumen dekomposisi, algoritma, dan hasil uji.",
+      "praktik_tautan": [],
+      "kuis": [
+        {
+          "pertanyaan": "Memecah masalah besar menjadi bagian-bagian kecil yang lebih mudah ditangani disebut ...",
+          "opsi_a": "Abstraksi",
+          "opsi_b": "Dekomposisi",
+          "opsi_c": "Algoritma",
+          "opsi_d": "Pengenalan pola",
+          "jawaban": "b",
+          "pembahasan": "Itulah dekomposisi. Contoh: menyiapkan kegiatan kelas dipecah menjadi jadwal, pendataan, perlengkapan, pembagian tugas, dan evaluasi."
+        },
+        {
+          "pertanyaan": "Dina menyadari bahwa beberapa soal berbeda ternyata dapat diselesaikan dengan langkah yang serupa. Ia sedang menerapkan ...",
+          "opsi_a": "Pengenalan pola",
+          "opsi_b": "Dekomposisi",
+          "opsi_c": "Abstraksi",
+          "opsi_d": "Pengujian solusi",
+          "jawaban": "a",
+          "pembahasan": "Mencari kesamaan atau kecenderungan dari beberapa masalah adalah pengenalan pola."
+        },
+        {
+          "pertanyaan": "Saat membuat denah sekolah, kamu hanya menampilkan ruang, jalan, dan pintu penting, tanpa warna cat tiap ruang. Kegiatan ini disebut ...",
+          "opsi_a": "Dekomposisi",
+          "opsi_b": "Pengenalan pola",
+          "opsi_c": "Abstraksi",
+          "opsi_d": "Debugging",
+          "jawaban": "c",
+          "pembahasan": "Abstraksi berarti memilih informasi yang penting dan mengabaikan detail yang tidak relevan."
+        },
+        {
+          "pertanyaan": "Pernyataan yang paling tepat tentang algoritma adalah ...",
+          "opsi_a": "Program yang ditulis dalam bahasa pemrograman tertentu",
+          "opsi_b": "Perangkat keras yang bertugas memproses data",
+          "opsi_c": "Gambar yang menunjukkan bagian-bagian komputer",
+          "opsi_d": "Urutan langkah logis yang jelas untuk menyelesaikan masalah",
+          "jawaban": "d",
+          "pembahasan": "Algoritma adalah langkah-langkah logis dan jelas. Ia dapat ditulis dengan bahasa sehari-hari, pseudocode, atau flowchart, belum tentu berupa program."
+        },
+        {
+          "pertanyaan": "Siswa boleh ikut ujian jika kehadiran ≥ 75% DAN semua tugas lengkap. Ani hadir 80% tetapi tugasnya belum lengkap. Hasilnya ...",
+          "opsi_a": "Boleh ikut, karena salah satu syarat sudah terpenuhi",
+          "opsi_b": "Boleh ikut, karena kehadiran lebih penting daripada tugas",
+          "opsi_c": "Tidak boleh ikut, karena pada operator AND kedua syarat harus benar",
+          "opsi_d": "Tidak dapat ditentukan tanpa data tambahan",
+          "jawaban": "c",
+          "pembahasan": "Operator AND bernilai benar hanya jika kedua syarat benar. Karena tugas belum lengkap, hasilnya salah (tidak boleh ikut)."
+        }
+      ],
+      "rubrik": [
+        {
+          "aspek": "Ketepatan konsep",
+          "s4": "Semua konsep tepat dan disertai contoh",
+          "s3": "Sebagian besar konsep tepat",
+          "s2": "Sebagian kecil tepat, ada miskonsepsi",
+          "s1": "Banyak konsep keliru"
+        },
+        {
+          "aspek": "Kelengkapan produk",
+          "s4": "Semua langkah dan produk lengkap",
+          "s3": "Kurang satu langkah",
+          "s2": "Kurang beberapa langkah",
+          "s1": "Sebagian besar kosong"
+        },
+        {
+          "aspek": "Penerapan dan kreativitas",
+          "s4": "Contoh orisinal dan relevan dengan kehidupan",
+          "s3": "Contoh relevan",
+          "s2": "Contoh umum, mengikuti materi",
+          "s1": "Tidak ada contoh"
+        },
+        {
+          "aspek": "Kejujuran dan waktu",
+          "s4": "Karya sendiri, tepat waktu",
+          "s3": "Karya sendiri, sedikit terlambat",
+          "s2": "Sebagian meniru, terlambat",
+          "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+        }
+      ],
+      "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+      "asesmen_tautan": []
+    },
+    {
+      "judul": "Sistem Komputer",
+      "ringkas": "Hardware, software, brainware, CPU, memori, dan cara kerja komputer.",
+      "pengantar": "Sistem komputer merupakan kesatuan perangkat keras, perangkat lunak, dan pengguna yang bekerja sama untuk menerima, mengolah, menyimpan, serta menghasilkan informasi.",
+      "mapel": "Informatika",
+      "kelas": "X / Fase E",
+      "alokasi": "2 × 45 menit",
+      "tujuan": [
+        "Menjelaskan komponen utama sistem komputer.",
+        "Membedakan hardware, software, dan brainware.",
+        "Menjelaskan fungsi CPU, memori, media penyimpanan, dan sistem operasi.",
+        "Menggambarkan alur input, proses, output, dan penyimpanan."
+      ],
+      "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+      "pemantik_pengantar": "Sistem komputer merupakan kesatuan perangkat keras, perangkat lunak, dan pengguna yang bekerja sama untuk menerima, mengolah, menyimpan, serta menghasilkan informasi.",
+      "pemantik": [
+        "Apa yang sudah kamu ketahui tentang topik ini?",
+        "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+        "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+      ],
+      "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+      "materi": "## 1. Komponen sistem komputer\n\nSistem komputer terdiri atas **hardware** (perangkat keras), **software** (perangkat lunak), dan **brainware** (manusia yang menggunakan atau mengelola komputer). Ketiganya saling membutuhkan.\n\n## 2. Perangkat keras\n\n- **Input:** keyboard, mouse, kamera, mikrofon.\n- **Process:** CPU dan komponen pemroses.\n- **Output:** monitor, printer, speaker.\n- **Memori utama:** RAM, tempat data dan instruksi yang sedang dipakai disimpan sementara (hilang saat komputer mati).\n- **Penyimpanan (storage):** SSD, HDD, flashdisk, yang menyimpan data lebih permanen.\n\n## 3. Perangkat lunak dan sistem operasi\n\nSoftware adalah instruksi yang mengatur kerja komputer. Sistem operasi seperti Windows, Linux, macOS, dan Android mengelola sumber daya komputer serta menjadi penghubung pengguna dengan perangkat keras dan aplikasi.\n\n## 4. CPU dan memori\n\nCPU menjalankan instruksi dan mengendalikan proses. RAM menyimpan sementara data dan instruksi yang sedang digunakan. Kapasitas dan kecepatan komponen memengaruhi kinerja komputer.\n\n## 5. Alur kerja komputer\n\nData masuk melalui perangkat input, diproses oleh CPU dengan bantuan memori, hasil ditampilkan melalui perangkat output, dan data dapat disimpan ke media penyimpanan untuk digunakan kembali.",
+      "materi_tautan": [],
+      "video": [],
+      "praktik": "## Menelusuri Alur Kerja Komputer\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Amati satu perangkat (komputer, laptop, atau ponsel). Daftarkan minimal tiga perangkat input, satu unit pemroses, tiga perangkat output, dan dua media penyimpanan.\n2. Lihat spesifikasinya (melalui Pengaturan atau Task Manager): prosesor, kapasitas RAM, kapasitas penyimpanan, dan sistem operasi.\n3. Gambar diagram alur saat kamu mengetik dan menyimpan dokumen: input → proses → output → penyimpanan.\n4. Jika komputer menjadi lambat saat banyak program dibuka, komponen apa yang perlu ditingkatkan? Jelaskan alasannya.\n\n**Produk:** tabel komponen, spesifikasi perangkat, diagram alur, dan analisis singkat.",
+      "praktik_tautan": [],
+      "kuis": [
+        {
+          "pertanyaan": "Komponen yang menjalankan instruksi dan mengendalikan proses pada komputer adalah ...",
+          "opsi_a": "Monitor",
+          "opsi_b": "CPU",
+          "opsi_c": "SSD",
+          "opsi_d": "Mouse",
+          "jawaban": "b",
+          "pembahasan": "CPU adalah unit pemroses yang menjalankan instruksi dan mengendalikan proses."
+        },
+        {
+          "pertanyaan": "Data dan instruksi yang sedang dipakai program disimpan sementara di ... dan hilang saat komputer dimatikan.",
+          "opsi_a": "RAM",
+          "opsi_b": "SSD",
+          "opsi_c": "Flashdisk",
+          "opsi_d": "Kartu memori",
+          "jawaban": "a",
+          "pembahasan": "RAM adalah memori kerja yang bersifat sementara. SSD, flashdisk, dan kartu memori menyimpan data lebih permanen."
+        },
+        {
+          "pertanyaan": "Contoh brainware adalah ...",
+          "opsi_a": "Sistem operasi Linux",
+          "opsi_b": "Motherboard",
+          "opsi_c": "Operator yang mengelola komputer",
+          "opsi_d": "Aplikasi pengolah kata",
+          "jawaban": "c",
+          "pembahasan": "Brainware adalah manusia yang menggunakan atau mengelola komputer. Motherboard adalah hardware, sedangkan sistem operasi dan aplikasi adalah software."
+        },
+        {
+          "pertanyaan": "Kamu mengetik kalimat di keyboard, lalu kalimat itu tampil di layar. Urutan alur kerja komputer yang tepat adalah ...",
+          "opsi_a": "Output → proses → input",
+          "opsi_b": "Proses → input → output",
+          "opsi_c": "Input → output → proses",
+          "opsi_d": "Input → proses → output",
+          "jawaban": "d",
+          "pembahasan": "Data masuk lewat perangkat input, diproses oleh CPU, lalu hasilnya ditampilkan lewat perangkat output."
+        },
+        {
+          "pertanyaan": "Fungsi utama sistem operasi adalah ...",
+          "opsi_a": "Hanya berfungsi untuk mencetak dan memindai dokumen",
+          "opsi_b": "Mengelola sumber daya dan menghubungkan pengguna dengan perangkat keras",
+          "opsi_c": "Mempercepat koneksi internet tanpa perangkat jaringan",
+          "opsi_d": "Menggantikan seluruh perangkat keras agar komputer lebih murah",
+          "jawaban": "b",
+          "pembahasan": "Sistem operasi seperti Windows, Linux, macOS, dan Android mengelola sumber daya komputer serta menjadi penghubung pengguna, aplikasi, dan hardware."
+        }
+      ],
+      "rubrik": [
+        {
+          "aspek": "Ketepatan konsep",
+          "s4": "Semua konsep tepat dan disertai contoh",
+          "s3": "Sebagian besar konsep tepat",
+          "s2": "Sebagian kecil tepat, ada miskonsepsi",
+          "s1": "Banyak konsep keliru"
+        },
+        {
+          "aspek": "Kelengkapan produk",
+          "s4": "Semua langkah dan produk lengkap",
+          "s3": "Kurang satu langkah",
+          "s2": "Kurang beberapa langkah",
+          "s1": "Sebagian besar kosong"
+        },
+        {
+          "aspek": "Penerapan dan kreativitas",
+          "s4": "Contoh orisinal dan relevan dengan kehidupan",
+          "s3": "Contoh relevan",
+          "s2": "Contoh umum, mengikuti materi",
+          "s1": "Tidak ada contoh"
+        },
+        {
+          "aspek": "Kejujuran dan waktu",
+          "s4": "Karya sendiri, tepat waktu",
+          "s3": "Karya sendiri, sedikit terlambat",
+          "s2": "Sebagian meniru, terlambat",
+          "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+        }
+      ],
+      "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+      "asesmen_tautan": []
+    },
+    {
+      "judul": "Pengintegrasian Aplikasi Perkantoran",
+      "ringkas": "Menghubungkan pengolah kata, spreadsheet, dan aplikasi presentasi untuk menghasilkan karya digital.",
+      "pengantar": "Aplikasi perkantoran dapat diintegrasikan agar dokumen, data angka, dan presentasi saling mendukung dalam menghasilkan informasi yang rapi dan mudah dipahami.",
+      "mapel": "Informatika",
+      "kelas": "X / Fase E",
+      "alokasi": "2 × 45 menit",
+      "tujuan": [
+        "Mengenali fungsi aplikasi pengolah kata, angka, dan presentasi.",
+        "Menggunakan fitur salin-tempel dan penyisipan objek dengan tepat.",
+        "Mengintegrasikan tabel/grafik dari spreadsheet ke dokumen atau presentasi.",
+        "Menyusun produk digital yang konsisten dan komunikatif."
+      ],
+      "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+      "pemantik_pengantar": "Aplikasi perkantoran dapat diintegrasikan agar dokumen, data angka, dan presentasi saling mendukung dalam menghasilkan informasi yang rapi dan mudah dipahami.",
+      "pemantik": [
+        "Apa yang sudah kamu ketahui tentang topik ini?",
+        "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+        "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+      ],
+      "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+      "materi": "## 1. Jenis aplikasi perkantoran\n\n- **Pengolah kata:** membuat surat, laporan, dan dokumen (misalnya Microsoft Word atau Writer).\n- **Pengolah angka:** mengolah data, menggunakan rumus, tabel, dan grafik (misalnya Excel atau Calc).\n- **Presentasi:** menyajikan informasi dalam bentuk slide (misalnya PowerPoint atau Impress).\n\n## 2. Mengapa aplikasi diintegrasikan?\n\nIntegrasi mengurangi pekerjaan berulang dan menjaga konsistensi informasi. Contohnya, data hasil survei diolah di spreadsheet, grafiknya dimasukkan ke laporan, lalu ringkasan laporan disajikan dalam slide.\n\n## 3. Cara memindahkan dan menautkan objek\n\nObjek dapat disalin lalu ditempel ke aplikasi lain. Beberapa aplikasi menyediakan pilihan tempel sebagai gambar, tabel, atau objek tertaut. Objek tertaut dapat mengikuti perubahan sumber, sedangkan tempel sebagai gambar biasanya tidak berubah otomatis ketika data sumber diperbarui.\n\n## 4. Contoh alur kerja terintegrasi\n\n1. Kumpulkan data jumlah buku yang dibaca siswa.\n2. Masukkan data ke spreadsheet dan hitung total/rata-rata.\n3. Buat grafik dari data tersebut.\n4. Masukkan tabel dan grafik ke dokumen laporan.\n5. Ambil temuan utama untuk dibuat menjadi slide presentasi.\n\n## 5. Kualitas dokumen digital\n\nGunakan judul dan subjudul yang konsisten, ukuran huruf terbaca, tabel yang rapi, sumber data yang jelas, serta grafik yang memiliki judul dan label. Periksa kembali ejaan dan kesesuaian angka sebelum membagikan dokumen.",
+      "materi_tautan": [],
+      "video": [],
+      "praktik": "## Proyek Laporan Terintegrasi\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Kumpulkan data sederhana dari sekitar 10 teman (misalnya jumlah buku yang dibaca bulan ini).\n2. Masukkan data ke spreadsheet, lalu hitung total dan rata-rata menggunakan rumus.\n3. Buat grafik yang punya judul dan label sumbu.\n4. Masukkan tabel dan grafik ke laporan satu halaman (pendahuluan, tabel, grafik, kesimpulan). Coba tempel sebagai gambar dan sebagai objek tertaut, lalu catat perbedaannya.\n5. Buat tiga slide ringkasan dari laporanmu.\n\n**Produk:** file spreadsheet, laporan, dan slide presentasi.",
+      "praktik_tautan": [],
+      "kuis": [
+        {
+          "pertanyaan": "Tim kalian harus menghitung rata-rata nilai dan membuat grafiknya. Aplikasi yang paling tepat adalah ...",
+          "opsi_a": "Pengolah kata",
+          "opsi_b": "Aplikasi presentasi",
+          "opsi_c": "Pengolah angka (spreadsheet)",
+          "opsi_d": "Peramban web",
+          "jawaban": "c",
+          "pembahasan": "Spreadsheet dirancang untuk mengolah data dengan rumus, tabel, dan grafik."
+        },
+        {
+          "pertanyaan": "Grafik yang dibuat di spreadsheet dapat dimanfaatkan dengan cara ...",
+          "opsi_a": "Disalin atau ditautkan ke laporan maupun slide presentasi",
+          "opsi_b": "Dilihat hanya di file spreadsheet asalnya",
+          "opsi_c": "Dicetak saja dan tidak boleh dipindahkan ke aplikasi lain",
+          "opsi_d": "Diubah menjadi teks agar dapat masuk ke laporan",
+          "jawaban": "a",
+          "pembahasan": "Objek seperti tabel dan grafik dapat dipindahkan atau ditautkan ke aplikasi lain, itulah inti integrasi aplikasi perkantoran."
+        },
+        {
+          "pertanyaan": "Grafik ditempel ke laporan sebagai gambar. Setelah itu data di spreadsheet diperbarui. Apa yang umumnya terjadi pada grafik di laporan?",
+          "opsi_a": "Berubah otomatis mengikuti data terbaru",
+          "opsi_b": "Terhapus dari laporan",
+          "opsi_c": "Berubah menjadi tabel data",
+          "opsi_d": "Tetap sama dan tidak ikut diperbarui",
+          "jawaban": "d",
+          "pembahasan": "Tempel sebagai gambar menghasilkan salinan tetap. Objek tertaut dapat mengikuti perubahan sumber, tergantung aplikasinya."
+        },
+        {
+          "pertanyaan": "Urutan kerja yang tepat untuk proyek survei jumlah buku yang dibaca siswa adalah ...",
+          "opsi_a": "Buat slide dulu, baru kumpulkan datanya",
+          "opsi_b": "Kumpulkan data → olah di spreadsheet → masukkan ke laporan → ringkas jadi slide",
+          "opsi_c": "Tulis laporan dulu, lalu susun datanya",
+          "opsi_d": "Buat grafik tanpa data, lalu isi belakangan",
+          "jawaban": "b",
+          "pembahasan": "Alur terintegrasi dimulai dari data, diolah menjadi tabel dan grafik, dimasukkan ke laporan, lalu temuan utamanya diringkas dalam slide."
+        },
+        {
+          "pertanyaan": "Sebelum laporan dibagikan, hal yang perlu dipastikan adalah ...",
+          "opsi_a": "Ejaan, angka, tampilan, dan sumber data sudah diperiksa",
+          "opsi_b": "Angka dibuat tampak menarik walaupun berbeda dari data",
+          "opsi_c": "Sumber data dihilangkan supaya laporan lebih singkat",
+          "opsi_d": "Huruf dikecilkan sekali agar semua muat dalam satu halaman",
+          "jawaban": "a",
+          "pembahasan": "Dokumen yang baik konsisten, terbaca, dan akurat. Angka tidak boleh diubah demi tampilan, dan sumber data perlu dicantumkan."
+        }
+      ],
+      "rubrik": [
+        {
+          "aspek": "Ketepatan konsep",
+          "s4": "Semua konsep tepat dan disertai contoh",
+          "s3": "Sebagian besar konsep tepat",
+          "s2": "Sebagian kecil tepat, ada miskonsepsi",
+          "s1": "Banyak konsep keliru"
+        },
+        {
+          "aspek": "Kelengkapan produk",
+          "s4": "Semua langkah dan produk lengkap",
+          "s3": "Kurang satu langkah",
+          "s2": "Kurang beberapa langkah",
+          "s1": "Sebagian besar kosong"
+        },
+        {
+          "aspek": "Penerapan dan kreativitas",
+          "s4": "Contoh orisinal dan relevan dengan kehidupan",
+          "s3": "Contoh relevan",
+          "s2": "Contoh umum, mengikuti materi",
+          "s1": "Tidak ada contoh"
+        },
+        {
+          "aspek": "Kejujuran dan waktu",
+          "s4": "Karya sendiri, tepat waktu",
+          "s3": "Karya sendiri, sedikit terlambat",
+          "s2": "Sebagian meniru, terlambat",
+          "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+        }
+      ],
+      "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+      "asesmen_tautan": []
+    },
+    {
+      "judul": "Jaringan Komputer dan Internet",
+      "ringkas": "Jenis jaringan, perangkat jaringan, IP, DNS, protokol, WWW, dan keamanan internet.",
+      "pengantar": "Jaringan komputer menghubungkan perangkat agar dapat bertukar data dan berbagi sumber daya. Internet menghubungkan berbagai jaringan di seluruh dunia.",
+      "mapel": "Informatika",
+      "kelas": "X / Fase E",
+      "alokasi": "2 × 45 menit",
+      "tujuan": [
+        "Menjelaskan manfaat dan jenis jaringan komputer.",
+        "Mengidentifikasi perangkat jaringan dan fungsinya.",
+        "Menjelaskan alamat IP, DNS, WWW, dan protokol komunikasi.",
+        "Menjelaskan alur sederhana saat perangkat mengakses situs web.",
+        "Menerapkan kebiasaan aman saat menggunakan internet."
+      ],
+      "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+      "pemantik_pengantar": "Jaringan komputer menghubungkan perangkat agar dapat bertukar data dan berbagi sumber daya. Internet menghubungkan berbagai jaringan di seluruh dunia.",
+      "pemantik": [
+        "Apa yang sudah kamu ketahui tentang topik ini?",
+        "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+        "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+      ],
+      "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+      "materi": "## 1. Jenis jaringan\n\n- **PAN:** jaringan pribadi jarak dekat, misalnya Bluetooth.\n- **LAN:** jaringan area terbatas seperti laboratorium sekolah.\n- **MAN:** jaringan dalam cakupan wilayah kota.\n- **WAN:** jaringan area luas antarkota atau antarwilayah.\n\n## 2. Perangkat jaringan\n\n- **Modem:** menghubungkan jaringan pelanggan ke layanan penyedia internet.\n- **Router:** meneruskan paket data antarjaringan.\n- **Switch:** menghubungkan perangkat dalam satu LAN.\n- **Access Point:** menyediakan koneksi Wi-Fi.\n- **NIC:** antarmuka jaringan pada perangkat.\n\n## 3. IP address dan DNS\n\nAlamat IP digunakan untuk mengenali perangkat/antarmuka dalam jaringan. DNS membantu menerjemahkan nama domain menjadi alamat IP agar perangkat dapat menemukan server yang dituju.\n\n## 4. Protokol komunikasi\n\nTCP/IP menjadi dasar komunikasi internet. HTTP/HTTPS digunakan untuk pertukaran data web, SMTP untuk pengiriman email, dan FTP untuk transfer berkas. HTTPS menambahkan perlindungan enkripsi melalui TLS.\n\n## 5. WWW dan cara kerja akses situs\n\nWWW (World Wide Web) adalah layanan informasi di internet yang diakses melalui browser. Saat alamat situs dimasukkan, browser mencari alamat IP melalui DNS, mengirim permintaan ke server menggunakan HTTP/HTTPS, menerima respons, lalu menampilkan halaman.\n\n## 6. Keamanan berinternet\n\n- Gunakan kata sandi kuat dan berbeda untuk akun penting.\n- Aktifkan autentikasi dua faktor jika tersedia.\n- Jangan membagikan OTP atau kata sandi.\n- Periksa alamat situs dan waspadai phishing.\n- Hindari mengunduh file dari sumber tidak tepercaya.\n- Berhati-hati saat menggunakan Wi-Fi publik.",
+      "materi_tautan": [],
+      "video": [],
+      "praktik": "## Simulasi Jaringan dan Keamanan Akun\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Gambar topologi sederhana jaringan lab atau rumahmu: modem, router, switch/access point, dan minimal empat perangkat. Beri label jenis jaringannya (LAN/WAN).\n2. Tuliskan urutan langkah yang terjadi ketika kamu membuka sebuah situs (DNS, alamat IP, permintaan HTTP/HTTPS, respons).\n3. Periksa tiga kebiasaan keamanan akunmu (kata sandi, autentikasi dua faktor, kewaspadaan terhadap tautan) dan buat rencana perbaikan.\n4. Buat poster atau infografis singkat berisi tiga ciri pesan phishing.\n\n**Produk:** gambar topologi, uraian langkah akses situs, rencana keamanan, dan poster/infografis.",
+      "praktik_tautan": [],
+      "kuis": [
+        {
+          "pertanyaan": "Jaringan komputer di laboratorium sekolah termasuk jenis ...",
+          "opsi_a": "WAN",
+          "opsi_b": "LAN",
+          "opsi_c": "MAN",
+          "opsi_d": "PAN",
+          "jawaban": "b",
+          "pembahasan": "LAN mencakup area terbatas seperti laboratorium, gedung, atau sekolah. PAN lebih kecil (pribadi), MAN seukuran kota, dan WAN antarwilayah."
+        },
+        {
+          "pertanyaan": "Perangkat yang menghubungkan beberapa komputer dalam satu jaringan LAN adalah ...",
+          "opsi_a": "Modem",
+          "opsi_b": "Scanner",
+          "opsi_c": "Switch",
+          "opsi_d": "Webcam",
+          "jawaban": "c",
+          "pembahasan": "Switch menghubungkan perangkat dalam satu LAN. Router meneruskan paket antarjaringan, sedangkan modem menghubungkan ke penyedia internet."
+        },
+        {
+          "pertanyaan": "Saat kamu mengetik nama situs di browser, layanan yang menerjemahkan nama domain menjadi alamat IP adalah ...",
+          "opsi_a": "DNS",
+          "opsi_b": "SMTP",
+          "opsi_c": "FTP",
+          "opsi_d": "Access Point",
+          "jawaban": "a",
+          "pembahasan": "DNS menerjemahkan nama domain menjadi alamat IP agar browser dapat menemukan server yang dituju."
+        },
+        {
+          "pertanyaan": "Alamat situs berawalan https:// menunjukkan bahwa ...",
+          "opsi_a": "Situs tersebut pasti bebas dari penipuan",
+          "opsi_b": "Data antara browser dan server dienkripsi",
+          "opsi_c": "Situs tersebut milik instansi pemerintah",
+          "opsi_d": "Situs dapat dibuka tanpa koneksi internet",
+          "jawaban": "b",
+          "pembahasan": "HTTPS mengenkripsi data lewat TLS. Namun situs penipuan juga bisa memakai HTTPS, jadi tetap periksa alamat dan sumber situs."
+        },
+        {
+          "pertanyaan": "Kamu menerima pesan: “Akunmu akan diblokir, klik tautan ini dan masukkan kata sandi.” Tindakan yang tepat adalah ...",
+          "opsi_a": "Mengikuti perintah itu agar akun tidak diblokir",
+          "opsi_b": "Meneruskannya ke teman agar mereka ikut waspada",
+          "opsi_c": "Membalas dan menanyakan siapa pengirimnya",
+          "opsi_d": "Tidak mengeklik tautan, memeriksa pengirim, dan melaporkan pesan",
+          "jawaban": "d",
+          "pembahasan": "Pesan mendesak yang meminta kata sandi adalah ciri phishing. Jangan klik tautannya, jangan bagikan OTP atau kata sandi, dan laporkan pesannya."
+        }
+      ],
+      "rubrik": [
+        {
+          "aspek": "Ketepatan konsep",
+          "s4": "Semua konsep tepat dan disertai contoh",
+          "s3": "Sebagian besar konsep tepat",
+          "s2": "Sebagian kecil tepat, ada miskonsepsi",
+          "s1": "Banyak konsep keliru"
+        },
+        {
+          "aspek": "Kelengkapan produk",
+          "s4": "Semua langkah dan produk lengkap",
+          "s3": "Kurang satu langkah",
+          "s2": "Kurang beberapa langkah",
+          "s1": "Sebagian besar kosong"
+        },
+        {
+          "aspek": "Penerapan dan kreativitas",
+          "s4": "Contoh orisinal dan relevan dengan kehidupan",
+          "s3": "Contoh relevan",
+          "s2": "Contoh umum, mengikuti materi",
+          "s1": "Tidak ada contoh"
+        },
+        {
+          "aspek": "Kejujuran dan waktu",
+          "s4": "Karya sendiri, tepat waktu",
+          "s3": "Karya sendiri, sedikit terlambat",
+          "s2": "Sebagian meniru, terlambat",
+          "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+        }
+      ],
+      "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+      "asesmen_tautan": []
+    }
+  ]
+}

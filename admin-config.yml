@@ -23,21 +23,24 @@ collections:
           - { label: "Nomor WhatsApp", name: "whatsapp", widget: "string", required: false, hint: "Contoh: 081234567890" }
           - { label: "Tautan Google Form", name: "form", widget: "string", required: false }
           - { label: "Tautan Padlet", name: "padlet", widget: "string", required: false }
-      - name: "bab-tambahan"
-        label: "Bab Tambahan (Bab 6, 7, ...)"
-        file: "bab-tambahan.json"
+      - name: "daftar-bab"
+        label: "Daftar Bab (tambah, ubah, hapus bab)"
+        file: "daftar-bab.json"
         format: "json"
         fields:
-          - label: "Daftar bab tambahan"
+          - label: "Bab"
             name: "bab"
             widget: "list"
             label_singular: "bab"
             summary: "{{fields.judul}}"
-            hint: "Klik Tambah bab untuk membuat Bab 6, 7, dan seterusnya (urutan = nomor bab)."
+            hint: "Urutan di daftar = nomor bab (bab pertama = Bab 1). Gunakan Tambah bab untuk bab baru."
             required: false
             fields:
               - { label: "Judul bab", name: "judul", widget: "string" }
               - { label: "Deskripsi singkat (tampil di kartu beranda)", name: "ringkas", widget: "text", required: false }
+              - { label: "Kalimat pengantar (tampil di bagian atas halaman bab)", name: "pengantar", widget: "text", required: false }
+              - { label: "Mata pelajaran", name: "mapel", widget: "string", default: "Informatika", required: false }
+              - { label: "Kelas", name: "kelas", widget: "string", default: "X / Fase E", required: false }
               - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
               - label: "Tujuan pembelajaran"
                 name: "tujuan"
@@ -45,13 +48,16 @@ collections:
                 label_singular: "tujuan"
                 required: false
                 field: { label: "Tujuan", name: "t", widget: "string" }
-              - label: "Pertanyaan pemantik"
+              - { label: "Kriteria keberhasilan", name: "kriteria", widget: "text", required: false }
+              - { label: "Pemantik: kalimat pembuka", name: "pemantik_pengantar", widget: "text", required: false }
+              - label: "Pemantik: daftar pertanyaan"
                 name: "pemantik"
                 widget: "list"
                 label_singular: "pertanyaan"
                 required: false
                 field: { label: "Pertanyaan", name: "p", widget: "string" }
-              - { label: "Materi", name: "materi", widget: "markdown", required: false, hint: "Tulis materi di sini. Bisa judul, tebal, miring, daftar, dan tautan." }
+              - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
+              - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: pakai tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
               - label: "Tautan materi tambahan"
                 name: "materi_tautan"
                 widget: "list"
@@ -74,7 +80,7 @@ collections:
                   - { label: "Judul video", name: "judul", widget: "string" }
                   - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
                   - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-              - { label: "Praktik / LKPD (petunjuk)", name: "praktik", widget: "markdown", required: false }
+              - { label: "Praktik / LKPD (petunjuk kegiatan)", name: "praktik", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [] }
               - label: "Tautan praktik / LKPD"
                 name: "praktik_tautan"
                 widget: "list"
@@ -108,6 +114,19 @@ collections:
                       - { label: "C", value: "c" }
                       - { label: "D", value: "d" }
                   - { label: "Pembahasan (tampil setelah diperiksa)", name: "pembahasan", widget: "text", required: false }
+              - label: "Rubrik penilaian LKPD"
+                name: "rubrik"
+                widget: "list"
+                label_singular: "aspek"
+                summary: "{{fields.aspek}}"
+                required: false
+                fields:
+                  - { label: "Aspek", name: "aspek", widget: "string" }
+                  - { label: "Skor 4 (Sangat baik)", name: "s4", widget: "text", required: false }
+                  - { label: "Skor 3 (Baik)", name: "s3", widget: "text", required: false }
+                  - { label: "Skor 2 (Cukup)", name: "s2", widget: "text", required: false }
+                  - { label: "Skor 1 (Perlu bimbingan)", name: "s1", widget: "text", required: false }
+              - { label: "Catatan cara penilaian (di bawah rubrik)", name: "rubrik_catatan", widget: "text", required: false }
               - label: "Tautan asesmen lain (Google Form, dll.)"
                 name: "asesmen_tautan"
                 widget: "list"
@@ -120,303 +139,3 @@ collections:
                   - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
                   - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
                   - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-      - name: "bab1"
-        label: "Bab 1"
-        file: "bab1.json"
-        format: "json"
-        fields:
-          - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
-          - label: "Video YouTube"
-            name: "video"
-            widget: "list"
-            label_singular: "video"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Judul video", name: "judul", widget: "string" }
-              - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
-              - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-          - label: "Materi tambahan (modul, slide)"
-            name: "materi"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Materi."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Praktik / LKPD"
-            name: "praktik"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Praktik."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Asesmen (kuis, tugas)"
-            name: "asesmen"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Asesmen."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Pertanyaan pemantik tambahan"
-            name: "pemantik"
-            widget: "list"
-            label_singular: "pertanyaan"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Pertanyaan", name: "judul", widget: "string" }
-      - name: "bab2"
-        label: "Bab 2"
-        file: "bab2.json"
-        format: "json"
-        fields:
-          - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
-          - label: "Video YouTube"
-            name: "video"
-            widget: "list"
-            label_singular: "video"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Judul video", name: "judul", widget: "string" }
-              - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
-              - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-          - label: "Materi tambahan (modul, slide)"
-            name: "materi"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Materi."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Praktik / LKPD"
-            name: "praktik"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Praktik."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Asesmen (kuis, tugas)"
-            name: "asesmen"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Asesmen."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Pertanyaan pemantik tambahan"
-            name: "pemantik"
-            widget: "list"
-            label_singular: "pertanyaan"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Pertanyaan", name: "judul", widget: "string" }
-      - name: "bab3"
-        label: "Bab 3"
-        file: "bab3.json"
-        format: "json"
-        fields:
-          - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
-          - label: "Video YouTube"
-            name: "video"
-            widget: "list"
-            label_singular: "video"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Judul video", name: "judul", widget: "string" }
-              - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
-              - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-          - label: "Materi tambahan (modul, slide)"
-            name: "materi"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Materi."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Praktik / LKPD"
-            name: "praktik"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Praktik."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Asesmen (kuis, tugas)"
-            name: "asesmen"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Asesmen."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Pertanyaan pemantik tambahan"
-            name: "pemantik"
-            widget: "list"
-            label_singular: "pertanyaan"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Pertanyaan", name: "judul", widget: "string" }
-      - name: "bab4"
-        label: "Bab 4"
-        file: "bab4.json"
-        format: "json"
-        fields:
-          - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
-          - label: "Video YouTube"
-            name: "video"
-            widget: "list"
-            label_singular: "video"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Judul video", name: "judul", widget: "string" }
-              - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
-              - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-          - label: "Materi tambahan (modul, slide)"
-            name: "materi"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Materi."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Praktik / LKPD"
-            name: "praktik"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Praktik."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Asesmen (kuis, tugas)"
-            name: "asesmen"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Asesmen."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Pertanyaan pemantik tambahan"
-            name: "pemantik"
-            widget: "list"
-            label_singular: "pertanyaan"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Pertanyaan", name: "judul", widget: "string" }
-      - name: "bab5"
-        label: "Bab 5"
-        file: "bab5.json"
-        format: "json"
-        fields:
-          - { label: "Alokasi waktu", name: "alokasi", widget: "string", default: "2 × 45 menit", required: false }
-          - label: "Video YouTube"
-            name: "video"
-            widget: "list"
-            label_singular: "video"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Judul video", name: "judul", widget: "string" }
-              - { label: "Durasi", name: "durasi", widget: "string", required: false, hint: "Contoh: 8 menit" }
-              - { label: "Tautan YouTube", name: "youtube", widget: "string" }
-          - label: "Materi tambahan (modul, slide)"
-            name: "materi"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Materi."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Praktik / LKPD"
-            name: "praktik"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Praktik."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Asesmen (kuis, tugas)"
-            name: "asesmen"
-            widget: "list"
-            label_singular: "tautan"
-            summary: "{{fields.judul}}"
-            hint: "Tombol tautan yang tampil di bagian Asesmen."
-            required: false
-            fields:
-              - { label: "Nama tombol", name: "judul", widget: "string" }
-              - { label: "Catatan singkat", name: "ket", widget: "string", required: false }
-              - { label: "Tautan (Google Drive / Canva / dll.)", name: "url", widget: "string", required: false, hint: "Isi ini ATAU unggah berkas di bawah." }
-              - { label: "Atau unggah berkas (PDF, slide, gambar)", name: "berkas", widget: "file", required: false }
-          - label: "Pertanyaan pemantik tambahan"
-            name: "pemantik"
-            widget: "list"
-            label_singular: "pertanyaan"
-            summary: "{{fields.judul}}"
-            required: false
-            fields:
-              - { label: "Pertanyaan", name: "judul", widget: "string" }
