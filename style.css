@@ -1,0 +1,171 @@
+/* ==========================================================
+   Edulink Informatika X — style.css
+   Bagian: 1 Dasar · 2 Navigasi & hero · 3 Beranda · 4 Halaman bab
+           5 Kuis · 6 Refleksi · 7 Footer · 8 Responsif · 9 Cetak
+   ========================================================== */
+
+/* 1. DASAR ---------------------------------------------------- */
+:root{
+  --ink:#142238; --navy:#101f35; --navy-2:#172942;
+  --muted:#4f5f75; --line:#e3e9f1; --bg:#fbfcff;
+  --accent:#b7f36b; --accent-dark:#3f6b0a;
+  --blue:#dcecff; --violet:#e9e4ff; --mint:#dcf5e3; --peach:#ffe8d6; --sand:#fdf3c8;
+  --ok:#17653a; --ok-bg:#e6f7ec; --bad:#9b1c1c; --bad-bg:#fdeaea;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--bg);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.6}
+h1,h2,h3{font-family:Manrope,'DM Sans',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.2}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto}
+:focus-visible{outline:3px solid #5b9cf5;outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--navy);padding:10px 14px;border-radius:8px;font-weight:700;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:1240px;margin:0 auto;padding:72px max(6vw,24px)}
+.muted{color:var(--muted);font-size:15px;line-height:1.7}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--accent-dark);margin-bottom:12px}
+.hero .eyebrow,.guide-band .eyebrow,.subhero .eyebrow{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:13px 20px;border-radius:9px;font:700 15px 'DM Sans',sans-serif;background:var(--accent);color:var(--navy);border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px #0000001f}
+.btn-dark{background:var(--navy-2);color:#fff}
+.btn-ghost{background:transparent;color:var(--navy-2);border:1.5px solid #b8c4d4}
+
+/* 2. NAVIGASI & HERO ------------------------------------------ */
+.hero{min-height:560px;background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:0 max(6vw,24px)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:5;border-bottom:1px solid #ffffff20}
+.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.04em}
+.brand i{font-style:normal;font-weight:500;color:#9eacc0}
+.nav-links{display:flex;gap:30px;font-size:15px;color:#d3dce8}
+.nav-links a:hover{color:var(--accent)}
+.menu-toggle{display:none;background:none;color:#fff;border:0;font-size:26px;cursor:pointer;padding:6px 10px}
+.hero-content{position:relative;z-index:2;padding:90px 0 80px;max-width:640px}
+.hero h1{font-size:clamp(42px,7vw,72px);margin:0 0 22px;line-height:1.06}
+.hero h1 span{color:var(--accent)}
+.hero-content>p{max-width:500px;color:#c3cfdd;font-size:17px;line-height:1.75;margin:0 0 30px}
+.hero-orbit{position:absolute;border:1px solid #ffffff14;border-radius:50%;pointer-events:none}
+.orbit-one{width:530px;height:530px;right:-100px;top:100px}
+.orbit-two{width:360px;height:360px;right:-15px;top:185px;background:radial-gradient(circle,#b7f36b14,transparent 68%)}
+
+/* 3. BERANDA --------------------------------------------------- */
+.intro{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:32px}
+.intro h2{font-size:clamp(26px,4vw,34px);margin:0}
+.intro .muted{max-width:360px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{padding:28px;border-radius:18px;display:flex;flex-direction:column;align-items:flex-start;min-height:290px}
+.card .num{font:800 28px Manrope,sans-serif;color:#44607f;margin-bottom:14px}
+.card h3{font-size:23px;margin:0 0 10px}
+.card .desc{font-size:15px;line-height:1.7;color:#43556b;margin:0 0 22px}
+.card .btn{margin-top:auto;background:var(--navy-2);color:#fff}
+.c1{background:var(--blue)}.c2{background:var(--violet)}.c3{background:var(--mint)}.c4{background:var(--peach)}.c5{background:var(--sand)}
+.guide-band{background:var(--navy-2);color:#fff}
+.guide-band h2{font-size:clamp(26px,4vw,36px);margin:0 0 30px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.steps p{margin:0;color:#c3cfdd;font-size:15px;line-height:1.7}
+.steps b{color:var(--accent);font:700 15px Manrope,sans-serif}
+
+/* 4. HALAMAN BAB ------------------------------------------------ */
+.subhero{background:var(--navy);color:#fff;padding:26px max(6vw,24px) 44px}
+.back{font-size:14px;color:#c3cfdd}
+.back:hover{color:var(--accent)}
+.subhero h1{font-size:clamp(32px,5vw,50px);margin:30px 0 12px}
+.subhero p{color:#c3cfdd;max-width:700px;line-height:1.7;font-size:16px;margin:0}
+.layout{max-width:1240px;margin:0 auto;padding:44px max(6vw,24px) 72px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:34px}
+.side{position:sticky;top:20px;align-self:start;background:#fff;border:1px solid var(--line);padding:16px;border-radius:12px}
+.side b{display:block;font-size:12px;letter-spacing:.08em;margin-bottom:10px;color:var(--muted)}
+.side a{display:block;padding:9px 10px;border-radius:7px;font-size:14px;color:var(--muted)}
+.side a:hover{background:#edf4ff;color:var(--navy-2)}
+.side a.active{background:#e4efff;color:var(--navy-2);font-weight:700}
+.content section{scroll-margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:18px}
+.content h2{font-size:24px;margin:0 0 14px}
+.content h3{font-size:18px;margin:22px 0 8px}
+.content p,.content li{font-size:16px;line-height:1.8;color:#3f5068}
+.content ul,.content ol{padding-left:22px}
+.callout{background:#f0f6ff;border-left:4px solid #7ca9e8;padding:13px 16px;border-radius:6px;margin:16px 0;font-size:15px;line-height:1.7}
+.resource{display:inline-block;background:var(--navy-2);color:#fff;border-radius:8px;padding:11px 15px;font-size:14px;font-weight:700;margin:6px 6px 6px 0}
+.resource:hover{background:#24406b}
+.task{background:#f5f8ef;border-radius:10px;padding:8px 18px}
+.task li{color:#37485e}
+.small-note{font-size:13px!important;color:var(--muted)!important}
+.pager{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:8px}
+.pager a{flex:1 1 220px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-size:14px;color:var(--muted)}
+.pager a:hover{border-color:#9db8dc;background:#f4f8ff}
+.pager strong{display:block;color:var(--ink);font-size:15px;margin-top:2px}
+.pager .next{text-align:right}
+
+/* 5. KUIS ---------------------------------------------------------- */
+.quiz-q{border:1px solid var(--line);background:#f7f9fc;border-radius:10px;padding:16px 18px;margin:0 0 14px;min-width:0}
+.quiz-q legend{font-weight:700;font-size:16px;line-height:1.5;padding:0 6px;color:var(--ink)}
+.quiz-q label{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;margin:8px 0;padding:9px 12px;border:1px solid transparent;border-radius:8px;color:#34465d;cursor:pointer}
+.quiz-q label:hover{background:#edf2f9}
+.quiz-q input{margin-top:4px;accent-color:#2a5db0}
+.quiz-q.unanswered{border-color:#d9822b;background:#fff8ef}
+.quiz-q.correct{border-color:#5fb883}
+.quiz-q.wrong{border-color:#d46a6a}
+.quiz-q label.is-correct{background:var(--ok-bg);border-color:#5fb883;color:var(--ok);font-weight:600}
+.quiz-q label.is-wrong{background:var(--bad-bg);border-color:#d46a6a;color:var(--bad)}
+.explain{margin:10px 0 2px!important;padding:10px 12px;border-radius:8px;font-size:14px!important;line-height:1.6!important;background:#fff;border:1px solid var(--line)}
+.explain .tag-ok{color:var(--ok);font-weight:700}
+.explain .tag-bad{color:var(--bad);font-weight:700}
+.quiz-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:6px}
+.quiz-result{font-size:16px;font-weight:700;margin-top:14px;line-height:1.6}
+.quiz-result:empty{display:none}
+.quiz-result.warn{color:#9a5200}
+
+/* 6. REFLEKSI ------------------------------------------------------ */
+.reflect label{display:block;font-weight:600;font-size:15px;margin:16px 0 6px;color:var(--ink)}
+.reflect textarea{width:100%;min-height:84px;padding:11px 13px;border:1px solid #c9d4e2;border-radius:9px;font:15px/1.6 'DM Sans',sans-serif;color:var(--ink);resize:vertical;background:#fcfdff}
+.reflect textarea:focus{border-color:#5b9cf5;outline:none;box-shadow:0 0 0 3px #5b9cf533}
+.reflect .quiz-actions{margin-top:16px}
+
+/* 6b. VIDEO, TANYA GURU, RUBRIK ---------------------------------- */
+.video-item{margin:0 0 22px}
+.video-frame{position:relative;aspect-ratio:16/9;background:#0b1626;border-radius:12px;overflow:hidden}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-meta{margin:8px 2px 0;font-size:15px;color:var(--muted)}
+.video-meta strong{color:var(--ink)}
+.ed-empty{color:#8a5a00;font-style:italic}
+.ask-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+.ask-grid a{display:block;background:#f3f8ff;border:1px solid #cfe0f7;border-radius:12px;padding:14px 16px;font-weight:700;color:var(--navy-2)}
+.ask-grid a:hover{background:#e6f0ff}
+.ask-grid span{display:block;font-weight:400;font-size:13px;color:var(--muted);margin-top:2px}
+.table-scroll{overflow-x:auto;margin:10px 0 6px;-webkit-overflow-scrolling:touch}
+.rubrik{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.rubrik th,.rubrik td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;line-height:1.5;color:#34465d}
+.rubrik th{background:#eef3fa;color:var(--ink)}
+.rubrik td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+
+.extra-item{margin:4px 0 10px}
+.extra-note{font-size:14px;color:var(--muted);margin-left:4px}
+.extra:empty,#materiExtra:empty,#praktikExtra:empty,#asesmenExtra:empty,#pemantikExtra:empty{display:none}
+
+/* 7. FOOTER --------------------------------------------------------- */
+footer{border-top:1px solid var(--line);padding:24px max(6vw,24px);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;color:#5d6c80}
+
+/* 8. RESPONSIF ---------------------------------------------------- */
+@media(max-width:760px){
+  .menu-toggle{display:block}
+  .nav-links{display:none;position:absolute;right:0;top:72px;background:#20344e;padding:18px 22px;border-radius:10px;flex-direction:column;gap:18px;box-shadow:0 10px 30px #0006}
+  .nav-links.open{display:flex}
+  .hero{min-height:0}
+  .hero-content{padding:64px 0 60px}
+  .orbit-one{right:-350px}
+  .wrap{padding:52px 24px}
+  .intro{display:block}.intro .muted{margin-top:10px}
+  .layout{grid-template-columns:minmax(0,1fr);padding:28px 24px 56px;gap:20px}
+  .side{position:static;display:flex;gap:6px;overflow-x:auto;padding:10px;-webkit-overflow-scrolling:touch}
+  .side b{display:none}
+  .side a{white-space:nowrap;flex:0 0 auto;background:#f3f6fb}
+  .content section{padding:20px 18px}
+  .pager .next{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* 9. CETAK ------------------------------------------------------------ */
+@media print{
+  .side,.nav,.back,.pager,.quiz-actions .btn,.resource,.skip{display:none!important}
+  .subhero,.hero{background:#fff!important;color:#000!important;padding:0!important}
+  .subhero p,.subhero h1{color:#000!important}
+  .layout{display:block;padding:0}
+  .content section{border:0;padding:8px 0;break-inside:avoid}
+  body{font-size:12pt;background:#fff}
+}
