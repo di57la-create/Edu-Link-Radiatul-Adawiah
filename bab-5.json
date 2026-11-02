@@ -1,5 +1,5 @@
 {
-  "tampil": true,
+  "tampil": false,
   "judul": "Jaringan Komputer dan Internet",
   "ringkas": "Jenis jaringan, perangkat jaringan, IP, DNS, protokol, WWW, dan keamanan internet.",
   "pengantar": "Jaringan komputer menghubungkan perangkat agar dapat bertukar data dan berbagi sumber daya. Internet menghubungkan berbagai jaringan di seluruh dunia.",
