@@ -23,6 +23,13 @@
       "judul": "Forum Diskusi (Padlet)",
       "ket": "Lihat dan tulis pertanyaan bersama",
       "tautan": ""
+    },
+    {
+      "aktif": true,
+      "jenis": "tautan",
+      "judul": "Tanya AI",
+      "ket": "",
+      "tautan": ""
     }
   ]
 }
