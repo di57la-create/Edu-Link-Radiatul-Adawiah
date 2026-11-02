@@ -40,6 +40,17 @@ collections:
               - { label: "Nama tombol", name: "judul", widget: "string", required: false, hint: "Contoh: Tanya via WhatsApp" }
               - { label: "Keterangan singkat", name: "ket", widget: "string", required: false }
               - { label: "Nomor WhatsApp / tautan / email", name: "tautan", widget: "string", required: false, hint: "WhatsApp: 081234567890. Tautan: https://... . Email: nama@contoh.com" }
+          - label: "Menu tambahan di bagian atas beranda (mis. Tanya AI)"
+            name: "menu"
+            widget: "list"
+            label_singular: "menu"
+            summary: "{{fields.judul}}"
+            hint: "Tiap menu jadi tautan di navigasi beranda, di samping Materi, Panduan, dan Tanya Guru. Matikan 'Aktif' untuk menyembunyikan."
+            required: false
+            fields:
+              - { label: "Aktif (tampil di situs)", name: "aktif", widget: "boolean", default: true, required: false }
+              - { label: "Nama menu", name: "judul", widget: "string", hint: "Contoh: Tanya AI" }
+              - { label: "Tautan", name: "tautan", widget: "string", hint: "Alamat https://... atau nama halaman di situs ini, mis. tanya-ai.html" }
       - name: "bab-1"
         label: "Bab 1"
         file: "bab-1.json"
@@ -68,12 +79,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -177,12 +188,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -286,12 +297,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -395,12 +406,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -504,12 +515,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -613,12 +624,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -722,12 +733,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -831,12 +842,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -940,12 +951,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -1049,12 +1060,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -1158,12 +1169,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }
@@ -1267,12 +1278,12 @@ collections:
             field: { label: "Pertanyaan", name: "p", widget: "string" }
           - { label: "Pemantik: catatan penutup", name: "pemantik_catatan", widget: "text", required: false }
           - { label: "Materi", name: "materi", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list", "quote"], editor_components: [], hint: "Judul bagian: tombol H2. Bisa tebal, miring, daftar, kutipan (kotak sorot), dan tautan." }
-          - label: "Tautan materi tambahan"
+          - label: "PPT dan bahan ajar (slide, modul, PDF)"
             name: "materi_tautan"
             widget: "list"
             label_singular: "tautan"
             summary: "{{fields.judul}}"
-            hint: "Tombol tautan di bagian Materi."
+            hint: "Tampil sebagai tombol di bagian Materi. Isi tautan Google Slides/Drive/Canva atau unggah berkas PPT/PDF."
             required: false
             fields:
               - { label: "Nama tombol", name: "judul", widget: "string" }

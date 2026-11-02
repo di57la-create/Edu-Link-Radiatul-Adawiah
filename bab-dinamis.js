@@ -103,6 +103,27 @@
     });
   }
 
+  /* Pemulihan: video dan tautan yang dulu diisi di versi lama (daftar-bab.json, bab1.json dst.)
+     dipakai bila isian di bab-N.json masih kosong. Isian baru selalu didahulukan. */
+  function fetchJSON(u) {
+    return fetch(u, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }
+  function withFallback(it) {
+    return Promise.all([fetchJSON('daftar-bab.json'), fetchJSON('bab' + it.slot + '.json')]).then(function (res) {
+      var v7 = res[0] && Array.isArray(res[0].bab) ? res[0].bab[it.slot - 1] : null;
+      if (v7 && it.slot > 5 && str(v7.judul) !== str(it.judul)) v7 = null;
+      var v6 = res[1] && typeof res[1] === 'object' ? res[1] : null;
+      var out = JSON.parse(JSON.stringify(it));
+      [['video', 'video', 'video'], ['materi_tautan', 'materi_tautan', 'materi'],
+       ['praktik_tautan', 'praktik_tautan', 'praktik'], ['asesmen_tautan', 'asesmen_tautan', 'asesmen']].forEach(function (f) {
+        if (listOf(out[f[0]]).length) return;
+        if (v7 && listOf(v7[f[1]]).length) out[f[0]] = v7[f[1]];
+        else if (v6 && listOf(v6[f[2]]).length) out[f[0]] = v6[f[2]];
+      });
+      return out;
+    });
+  }
+
   /* --- 1) Beranda: kartu semua bab --- */
   function renderCards(grid) {
     loadJSON().then(function (items) {
@@ -128,7 +149,7 @@
       var pos = -1;
       items.forEach(function (x, i) { if (x.slot === slot) pos = i; });
       if (!slot || pos < 0) throw new Error('tidak ada');
-      build(root, pos + 1, items[pos], items);
+      return withFallback(items[pos]).then(function (full) { build(root, pos + 1, full, items); });
     }).catch(function () {
       var box = mk('main', 'content');
       box.style.padding = '60px 24px';
@@ -201,13 +222,15 @@
     var sM = section('materi', 'RINGKASAN MATERI', judul);
     if (str(it.materi)) sM.appendChild(markdown(it.materi));
     else sM.appendChild(mk('p', 'muted', 'Materi belum diisi.'));
-    var lbM = linkBlock('Materi tambahan', it.materi_tautan); if (lbM) sM.appendChild(lbM);
+    var lbM = linkBlock('PPT dan bahan ajar', it.materi_tautan);
+    if (lbM) sM.appendChild(lbM);
+    else { sM.appendChild(mk('h3', '', 'PPT dan bahan ajar')); sM.appendChild(mk('p', 'muted', 'Belum ada PPT atau bahan ajar yang ditambahkan guru.')); }
     main.appendChild(sM); addSide('materi', 'Materi');
 
     /* Video */
     var vids = listOf(it.video).filter(function (v) { return v && ytId(v.youtube); });
+    var sV = section('video', 'VIDEO PEMBELAJARAN', 'Tonton dan pahami');
     if (vids.length) {
-      var sV = section('video', 'VIDEO PEMBELAJARAN', 'Tonton dan pahami');
       vids.forEach(function (v, i) {
         var id = ytId(v.youtube), box = mk('div', 'video-item'), fr = mk('div', 'video-frame');
         var ifr = document.createElement('iframe');
@@ -223,8 +246,13 @@
         a.target = '_blank'; a.rel = 'noopener'; a.style.textDecoration = 'underline';
         meta.appendChild(a); box.appendChild(meta); sV.appendChild(box);
       });
-      main.appendChild(sV); addSide('video', 'Video belajar');
+    } else {
+      sV.appendChild(mk('p', '', 'Tonton video berikut sesuai arahan guru.'));
+      var sa = mk('a', 'resource', 'Cari video pembelajaran di YouTube ↗');
+      sa.href = 'https://www.youtube.com/results?search_query=' + encodeURIComponent('informatika ' + judul + ' kelas 10');
+      sa.target = '_blank'; sa.rel = 'noopener'; sV.appendChild(sa);
     }
+    main.appendChild(sV); addSide('video', 'Video belajar');
 
     /* Praktik / LKPD */
     var lbP = linkBlock('Lembar kerja dan sumber praktik', it.praktik_tautan);

@@ -208,6 +208,22 @@
       }
     }
 
+    /* Menu tambahan (dari Data Umum di panel admin), mis. "Tanya AI" */
+    var nl = $('navLinks');
+    if (nl) {
+      Array.prototype.slice.call(nl.querySelectorAll('a[data-extra]')).forEach(function (x) { x.parentNode.removeChild(x); });
+      (Array.isArray(cfg.menu) ? cfg.menu : []).forEach(function (m) {
+        if (!m || m.aktif === false) return;
+        var judulM = String(m.judul || '').trim(), raw = String(m.tautan || '').trim(), href = '';
+        if (!judulM || !raw) return;
+        try { var u2 = new URL(raw, window.location.href); if (/^https?:$/.test(u2.protocol)) href = u2.href; } catch (e) { href = ''; }
+        if (!href) return;
+        var am = mk('a', '', judulM); am.href = href; am.setAttribute('data-extra', '1');
+        if (new URL(href).origin !== window.location.origin) { am.target = '_blank'; am.rel = 'noopener'; }
+        nl.appendChild(am);
+      });
+    }
+
     /* Tanya Guru */
     if (tl) {
       tl.innerHTML = tlInit;
@@ -341,6 +357,7 @@
         ['guru', 'sekolah', 'tahun'].forEach(function (k) { if (u[k]) c[k] = String(u[k]).trim(); });
         ['whatsapp', 'form', 'padlet'].forEach(function (k) { if (u[k]) c.tanyaGuru[k] = String(u[k]).trim(); });
         if (Array.isArray(u.kontak)) c.tanyaGuru = { daftar: u.kontak };
+        if (Array.isArray(u.menu)) c.menu = u.menu;
       }
       if (b && babNo) {
         var bb = c.bab[babNo] = c.bab[babNo] || {};
