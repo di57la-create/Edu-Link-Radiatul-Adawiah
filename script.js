@@ -212,15 +212,40 @@
     if (tl) {
       tl.innerHTML = tlInit;
       var tg = cfg.tanyaGuru || {}, items2 = [];
-      var wa = String(tg.whatsapp || '').replace(/\D/g, '');
-      if (wa) {
-        if (wa.charAt(0) === '0') wa = '62' + wa.slice(1);
-        var judul = document.body.getAttribute('data-judul');
-        var pesan = judul ? 'Halo Bapak/Ibu, saya ingin bertanya tentang ' + judul + '.' : 'Halo Bapak/Ibu, saya ingin bertanya tentang pelajaran Informatika.';
-        items2.push(['Tanya via WhatsApp', 'Kirim pertanyaan langsung ke guru', 'https://wa.me/' + wa + '?text=' + encodeURIComponent(pesan)]);
+      var pesanDasar = document.body.getAttribute('data-judul');
+      var pesan = pesanDasar ? 'Halo Bapak/Ibu, saya ingin bertanya tentang ' + pesanDasar + '.' : 'Halo Bapak/Ibu, saya ingin bertanya tentang pelajaran Informatika.';
+      if (Array.isArray(tg.daftar)) {
+        /* daftar kontak dari panel admin: tiap kontak bisa dinonaktifkan */
+        tg.daftar.forEach(function (k) {
+          if (!k || k.aktif === false) return;
+          var jenis = String(k.jenis || '').toLowerCase(), val = String(k.tautan || '').trim();
+          if (!val) return;
+          var judulK = String(k.judul || '').trim(), ketK = String(k.ket || '').trim(), href = '';
+          if (jenis === 'whatsapp') {
+            var nomor = val.replace(/\D/g, '');
+            if (!nomor) return;
+            if (nomor.charAt(0) === '0') nomor = '62' + nomor.slice(1);
+            href = 'https://wa.me/' + nomor + '?text=' + encodeURIComponent(pesan);
+            judulK = judulK || 'Tanya via WhatsApp'; ketK = ketK || 'Kirim pertanyaan langsung ke guru';
+          } else if (jenis === 'email') {
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) return;
+            href = 'mailto:' + val;
+            judulK = judulK || 'Kirim email'; ketK = ketK || val;
+          } else {
+            href = safeUrl(val);
+            judulK = judulK || 'Buka tautan'; ketK = ketK || 'Tanya jawab dan diskusi';
+          }
+          if (href) items2.push([judulK, ketK, href]);
+        });
+      } else {
+        var wa = String(tg.whatsapp || '').replace(/\D/g, '');
+        if (wa) {
+          if (wa.charAt(0) === '0') wa = '62' + wa.slice(1);
+          items2.push(['Tanya via WhatsApp', 'Kirim pertanyaan langsung ke guru', 'https://wa.me/' + wa + '?text=' + encodeURIComponent(pesan)]);
+        }
+        if (safeUrl(tg.form)) items2.push(['Isi Formulir Pertanyaan', 'Google Form tanya jawab', safeUrl(tg.form)]);
+        if (safeUrl(tg.padlet)) items2.push(['Forum Diskusi (Padlet)', 'Lihat dan tulis pertanyaan bersama', safeUrl(tg.padlet)]);
       }
-      if (safeUrl(tg.form)) items2.push(['Isi Formulir Pertanyaan', 'Google Form tanya jawab', safeUrl(tg.form)]);
-      if (safeUrl(tg.padlet)) items2.push(['Forum Diskusi (Padlet)', 'Lihat dan tulis pertanyaan bersama', safeUrl(tg.padlet)]);
       if (items2.length) {
         tl.textContent = '';
         items2.forEach(function (it) {
@@ -315,6 +340,7 @@
       if (u) {
         ['guru', 'sekolah', 'tahun'].forEach(function (k) { if (u[k]) c[k] = String(u[k]).trim(); });
         ['whatsapp', 'form', 'padlet'].forEach(function (k) { if (u[k]) c.tanyaGuru[k] = String(u[k]).trim(); });
+        if (Array.isArray(u.kontak)) c.tanyaGuru = { daftar: u.kontak };
       }
       if (b && babNo) {
         var bb = c.bab[babNo] = c.bab[babNo] || {};

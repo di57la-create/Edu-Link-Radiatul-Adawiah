@@ -1,0 +1,107 @@
+{
+  "tampil": true,
+  "judul": "Pengintegrasian Aplikasi Perkantoran",
+  "ringkas": "Menghubungkan pengolah kata, spreadsheet, dan aplikasi presentasi untuk menghasilkan karya digital.",
+  "pengantar": "Aplikasi perkantoran dapat diintegrasikan agar dokumen, data angka, dan presentasi saling mendukung dalam menghasilkan informasi yang rapi dan mudah dipahami.",
+  "mapel": "Informatika",
+  "kelas": "X / Fase E",
+  "alokasi": "2 × 45 menit",
+  "tujuan": [
+    "Mengenali fungsi aplikasi pengolah kata, angka, dan presentasi.",
+    "Menggunakan fitur salin-tempel dan penyisipan objek dengan tepat.",
+    "Mengintegrasikan tabel/grafik dari spreadsheet ke dokumen atau presentasi.",
+    "Menyusun produk digital yang konsisten dan komunikatif."
+  ],
+  "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+  "pemantik_pengantar": "Aplikasi perkantoran dapat diintegrasikan agar dokumen, data angka, dan presentasi saling mendukung dalam menghasilkan informasi yang rapi dan mudah dipahami.",
+  "pemantik": [
+    "Apa yang sudah kamu ketahui tentang topik ini?",
+    "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+    "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+  ],
+  "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+  "materi": "## 1. Jenis aplikasi perkantoran\n\n- **Pengolah kata:** membuat surat, laporan, dan dokumen (misalnya Microsoft Word atau Writer).\n- **Pengolah angka:** mengolah data, menggunakan rumus, tabel, dan grafik (misalnya Excel atau Calc).\n- **Presentasi:** menyajikan informasi dalam bentuk slide (misalnya PowerPoint atau Impress).\n\n## 2. Mengapa aplikasi diintegrasikan?\n\nIntegrasi mengurangi pekerjaan berulang dan menjaga konsistensi informasi. Contohnya, data hasil survei diolah di spreadsheet, grafiknya dimasukkan ke laporan, lalu ringkasan laporan disajikan dalam slide.\n\n## 3. Cara memindahkan dan menautkan objek\n\nObjek dapat disalin lalu ditempel ke aplikasi lain. Beberapa aplikasi menyediakan pilihan tempel sebagai gambar, tabel, atau objek tertaut. Objek tertaut dapat mengikuti perubahan sumber, sedangkan tempel sebagai gambar biasanya tidak berubah otomatis ketika data sumber diperbarui.\n\n## 4. Contoh alur kerja terintegrasi\n\n1. Kumpulkan data jumlah buku yang dibaca siswa.\n2. Masukkan data ke spreadsheet dan hitung total/rata-rata.\n3. Buat grafik dari data tersebut.\n4. Masukkan tabel dan grafik ke dokumen laporan.\n5. Ambil temuan utama untuk dibuat menjadi slide presentasi.\n\n## 5. Kualitas dokumen digital\n\nGunakan judul dan subjudul yang konsisten, ukuran huruf terbaca, tabel yang rapi, sumber data yang jelas, serta grafik yang memiliki judul dan label. Periksa kembali ejaan dan kesesuaian angka sebelum membagikan dokumen.",
+  "materi_tautan": [],
+  "video": [],
+  "praktik": "## Proyek Laporan Terintegrasi\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Kumpulkan data sederhana dari sekitar 10 teman (misalnya jumlah buku yang dibaca bulan ini).\n2. Masukkan data ke spreadsheet, lalu hitung total dan rata-rata menggunakan rumus.\n3. Buat grafik yang punya judul dan label sumbu.\n4. Masukkan tabel dan grafik ke laporan satu halaman (pendahuluan, tabel, grafik, kesimpulan). Coba tempel sebagai gambar dan sebagai objek tertaut, lalu catat perbedaannya.\n5. Buat tiga slide ringkasan dari laporanmu.\n\n**Produk:** file spreadsheet, laporan, dan slide presentasi.",
+  "praktik_tautan": [],
+  "kuis": [
+    {
+      "pertanyaan": "Tim kalian harus menghitung rata-rata nilai dan membuat grafiknya. Aplikasi yang paling tepat adalah ...",
+      "opsi_a": "Pengolah kata",
+      "opsi_b": "Aplikasi presentasi",
+      "opsi_c": "Pengolah angka (spreadsheet)",
+      "opsi_d": "Peramban web",
+      "jawaban": "c",
+      "pembahasan": "Spreadsheet dirancang untuk mengolah data dengan rumus, tabel, dan grafik."
+    },
+    {
+      "pertanyaan": "Grafik yang dibuat di spreadsheet dapat dimanfaatkan dengan cara ...",
+      "opsi_a": "Disalin atau ditautkan ke laporan maupun slide presentasi",
+      "opsi_b": "Dilihat hanya di file spreadsheet asalnya",
+      "opsi_c": "Dicetak saja dan tidak boleh dipindahkan ke aplikasi lain",
+      "opsi_d": "Diubah menjadi teks agar dapat masuk ke laporan",
+      "jawaban": "a",
+      "pembahasan": "Objek seperti tabel dan grafik dapat dipindahkan atau ditautkan ke aplikasi lain, itulah inti integrasi aplikasi perkantoran."
+    },
+    {
+      "pertanyaan": "Grafik ditempel ke laporan sebagai gambar. Setelah itu data di spreadsheet diperbarui. Apa yang umumnya terjadi pada grafik di laporan?",
+      "opsi_a": "Berubah otomatis mengikuti data terbaru",
+      "opsi_b": "Terhapus dari laporan",
+      "opsi_c": "Berubah menjadi tabel data",
+      "opsi_d": "Tetap sama dan tidak ikut diperbarui",
+      "jawaban": "d",
+      "pembahasan": "Tempel sebagai gambar menghasilkan salinan tetap. Objek tertaut dapat mengikuti perubahan sumber, tergantung aplikasinya."
+    },
+    {
+      "pertanyaan": "Urutan kerja yang tepat untuk proyek survei jumlah buku yang dibaca siswa adalah ...",
+      "opsi_a": "Buat slide dulu, baru kumpulkan datanya",
+      "opsi_b": "Kumpulkan data → olah di spreadsheet → masukkan ke laporan → ringkas jadi slide",
+      "opsi_c": "Tulis laporan dulu, lalu susun datanya",
+      "opsi_d": "Buat grafik tanpa data, lalu isi belakangan",
+      "jawaban": "b",
+      "pembahasan": "Alur terintegrasi dimulai dari data, diolah menjadi tabel dan grafik, dimasukkan ke laporan, lalu temuan utamanya diringkas dalam slide."
+    },
+    {
+      "pertanyaan": "Sebelum laporan dibagikan, hal yang perlu dipastikan adalah ...",
+      "opsi_a": "Ejaan, angka, tampilan, dan sumber data sudah diperiksa",
+      "opsi_b": "Angka dibuat tampak menarik walaupun berbeda dari data",
+      "opsi_c": "Sumber data dihilangkan supaya laporan lebih singkat",
+      "opsi_d": "Huruf dikecilkan sekali agar semua muat dalam satu halaman",
+      "jawaban": "a",
+      "pembahasan": "Dokumen yang baik konsisten, terbaca, dan akurat. Angka tidak boleh diubah demi tampilan, dan sumber data perlu dicantumkan."
+    }
+  ],
+  "rubrik": [
+    {
+      "aspek": "Ketepatan konsep",
+      "s4": "Semua konsep tepat dan disertai contoh",
+      "s3": "Sebagian besar konsep tepat",
+      "s2": "Sebagian kecil tepat, ada miskonsepsi",
+      "s1": "Banyak konsep keliru"
+    },
+    {
+      "aspek": "Kelengkapan produk",
+      "s4": "Semua langkah dan produk lengkap",
+      "s3": "Kurang satu langkah",
+      "s2": "Kurang beberapa langkah",
+      "s1": "Sebagian besar kosong"
+    },
+    {
+      "aspek": "Penerapan dan kreativitas",
+      "s4": "Contoh orisinal dan relevan dengan kehidupan",
+      "s3": "Contoh relevan",
+      "s2": "Contoh umum, mengikuti materi",
+      "s1": "Tidak ada contoh"
+    },
+    {
+      "aspek": "Kejujuran dan waktu",
+      "s4": "Karya sendiri, tepat waktu",
+      "s3": "Karya sendiri, sedikit terlambat",
+      "s2": "Sebagian meniru, terlambat",
+      "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+    }
+  ],
+  "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+  "asesmen_tautan": []
+}

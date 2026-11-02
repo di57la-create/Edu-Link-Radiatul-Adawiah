@@ -1,0 +1,107 @@
+{
+  "tampil": true,
+  "judul": "Berpikir Komputasional",
+  "ringkas": "Dekomposisi, pengenalan pola, abstraksi, algoritma, dan logika.",
+  "pengantar": "Berpikir komputasional membantu kita menyelesaikan masalah secara logis, terstruktur, dan efisien, baik dengan komputer maupun tanpa komputer.",
+  "mapel": "Informatika",
+  "kelas": "X / Fase E",
+  "alokasi": "2 × 45 menit",
+  "tujuan": [
+    "Menjelaskan konsep berpikir komputasional.",
+    "Menggunakan dekomposisi, pengenalan pola, abstraksi, dan algoritma.",
+    "Menyusun langkah penyelesaian masalah secara runtut.",
+    "Menguji dan memperbaiki solusi sederhana."
+  ],
+  "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+  "pemantik_pengantar": "Berpikir komputasional membantu kita menyelesaikan masalah secara logis, terstruktur, dan efisien, baik dengan komputer maupun tanpa komputer.",
+  "pemantik": [
+    "Apa yang sudah kamu ketahui tentang topik ini?",
+    "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+    "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+  ],
+  "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+  "materi": "## 1. Empat fondasi berpikir komputasional\n\n- **Dekomposisi:** memecah masalah besar menjadi bagian-bagian kecil.\n- **Pengenalan pola:** mencari kesamaan atau kecenderungan dari beberapa masalah.\n- **Abstraksi:** memilih informasi penting dan mengabaikan detail yang tidak relevan.\n- **Algoritma:** menyusun langkah-langkah logis untuk menyelesaikan masalah.\n\n## 2. Contoh dekomposisi\n\nMasalah: menyiapkan kegiatan kelas. Pecah menjadi tugas menentukan jadwal, mendata peserta, menyiapkan perlengkapan, membagi tanggung jawab, dan mengevaluasi kegiatan.\n\n## 3. Pengenalan pola dan abstraksi\n\nJika setiap hari siswa melakukan presensi dengan urutan yang sama, kita dapat mengenali pola prosesnya. Saat membuat peta sekolah, kita cukup menampilkan ruang, jalan, dan pintu penting; warna sepatu setiap orang tidak diperlukan. Itulah abstraksi.\n\n## 4. Algoritma dan representasi\n\nAlgoritma dapat ditulis menggunakan bahasa sehari-hari, pseudocode, atau diagram alir (flowchart). Contoh algoritma menghitung luas persegi: mulai, masukkan sisi, hitung sisi × sisi, tampilkan luas, selesai.\n\n## 5. Logika dan pengujian solusi\n\nGunakan kondisi seperti JIKA–MAKA dan operasi logika AND, OR, serta NOT. Setelah solusi dibuat, uji dengan beberapa masukan, periksa hasil, lalu perbaiki jika ditemukan kesalahan.",
+  "materi_tautan": [],
+  "video": [],
+  "praktik": "## Dekomposisi dan Algoritma Kegiatan Sekolah\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Pilih satu masalah di sekolah (misalnya jadwal piket kelas, menyiapkan upacara, atau belajar kelompok).\n2. Lakukan dekomposisi: pecah menjadi minimal lima subtugas.\n3. Cari pola yang berulang, lalu tentukan informasi yang penting dan yang boleh diabaikan (abstraksi).\n4. Tulis algoritmanya dalam pseudocode atau flowchart, dengan sedikitnya satu percabangan JIKA–MAKA.\n5. Uji dengan dua kasus berbeda, catat hasilnya, dan perbaiki jika ada langkah yang keliru.\n\n**Produk:** dokumen dekomposisi, algoritma, dan hasil uji.",
+  "praktik_tautan": [],
+  "kuis": [
+    {
+      "pertanyaan": "Memecah masalah besar menjadi bagian-bagian kecil yang lebih mudah ditangani disebut ...",
+      "opsi_a": "Abstraksi",
+      "opsi_b": "Dekomposisi",
+      "opsi_c": "Algoritma",
+      "opsi_d": "Pengenalan pola",
+      "jawaban": "b",
+      "pembahasan": "Itulah dekomposisi. Contoh: menyiapkan kegiatan kelas dipecah menjadi jadwal, pendataan, perlengkapan, pembagian tugas, dan evaluasi."
+    },
+    {
+      "pertanyaan": "Dina menyadari bahwa beberapa soal berbeda ternyata dapat diselesaikan dengan langkah yang serupa. Ia sedang menerapkan ...",
+      "opsi_a": "Pengenalan pola",
+      "opsi_b": "Dekomposisi",
+      "opsi_c": "Abstraksi",
+      "opsi_d": "Pengujian solusi",
+      "jawaban": "a",
+      "pembahasan": "Mencari kesamaan atau kecenderungan dari beberapa masalah adalah pengenalan pola."
+    },
+    {
+      "pertanyaan": "Saat membuat denah sekolah, kamu hanya menampilkan ruang, jalan, dan pintu penting, tanpa warna cat tiap ruang. Kegiatan ini disebut ...",
+      "opsi_a": "Dekomposisi",
+      "opsi_b": "Pengenalan pola",
+      "opsi_c": "Abstraksi",
+      "opsi_d": "Debugging",
+      "jawaban": "c",
+      "pembahasan": "Abstraksi berarti memilih informasi yang penting dan mengabaikan detail yang tidak relevan."
+    },
+    {
+      "pertanyaan": "Pernyataan yang paling tepat tentang algoritma adalah ...",
+      "opsi_a": "Program yang ditulis dalam bahasa pemrograman tertentu",
+      "opsi_b": "Perangkat keras yang bertugas memproses data",
+      "opsi_c": "Gambar yang menunjukkan bagian-bagian komputer",
+      "opsi_d": "Urutan langkah logis yang jelas untuk menyelesaikan masalah",
+      "jawaban": "d",
+      "pembahasan": "Algoritma adalah langkah-langkah logis dan jelas. Ia dapat ditulis dengan bahasa sehari-hari, pseudocode, atau flowchart, belum tentu berupa program."
+    },
+    {
+      "pertanyaan": "Siswa boleh ikut ujian jika kehadiran ≥ 75% DAN semua tugas lengkap. Ani hadir 80% tetapi tugasnya belum lengkap. Hasilnya ...",
+      "opsi_a": "Boleh ikut, karena salah satu syarat sudah terpenuhi",
+      "opsi_b": "Boleh ikut, karena kehadiran lebih penting daripada tugas",
+      "opsi_c": "Tidak boleh ikut, karena pada operator AND kedua syarat harus benar",
+      "opsi_d": "Tidak dapat ditentukan tanpa data tambahan",
+      "jawaban": "c",
+      "pembahasan": "Operator AND bernilai benar hanya jika kedua syarat benar. Karena tugas belum lengkap, hasilnya salah (tidak boleh ikut)."
+    }
+  ],
+  "rubrik": [
+    {
+      "aspek": "Ketepatan konsep",
+      "s4": "Semua konsep tepat dan disertai contoh",
+      "s3": "Sebagian besar konsep tepat",
+      "s2": "Sebagian kecil tepat, ada miskonsepsi",
+      "s1": "Banyak konsep keliru"
+    },
+    {
+      "aspek": "Kelengkapan produk",
+      "s4": "Semua langkah dan produk lengkap",
+      "s3": "Kurang satu langkah",
+      "s2": "Kurang beberapa langkah",
+      "s1": "Sebagian besar kosong"
+    },
+    {
+      "aspek": "Penerapan dan kreativitas",
+      "s4": "Contoh orisinal dan relevan dengan kehidupan",
+      "s3": "Contoh relevan",
+      "s2": "Contoh umum, mengikuti materi",
+      "s1": "Tidak ada contoh"
+    },
+    {
+      "aspek": "Kejujuran dan waktu",
+      "s4": "Karya sendiri, tepat waktu",
+      "s3": "Karya sendiri, sedikit terlambat",
+      "s2": "Sebagian meniru, terlambat",
+      "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+    }
+  ],
+  "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+  "asesmen_tautan": []
+}

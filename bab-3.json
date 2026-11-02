@@ -1,0 +1,107 @@
+{
+  "tampil": true,
+  "judul": "Sistem Komputer",
+  "ringkas": "Hardware, software, brainware, CPU, memori, dan cara kerja komputer.",
+  "pengantar": "Sistem komputer merupakan kesatuan perangkat keras, perangkat lunak, dan pengguna yang bekerja sama untuk menerima, mengolah, menyimpan, serta menghasilkan informasi.",
+  "mapel": "Informatika",
+  "kelas": "X / Fase E",
+  "alokasi": "2 × 45 menit",
+  "tujuan": [
+    "Menjelaskan komponen utama sistem komputer.",
+    "Membedakan hardware, software, dan brainware.",
+    "Menjelaskan fungsi CPU, memori, media penyimpanan, dan sistem operasi.",
+    "Menggambarkan alur input, proses, output, dan penyimpanan."
+  ],
+  "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+  "pemantik_pengantar": "Sistem komputer merupakan kesatuan perangkat keras, perangkat lunak, dan pengguna yang bekerja sama untuk menerima, mengolah, menyimpan, serta menghasilkan informasi.",
+  "pemantik": [
+    "Apa yang sudah kamu ketahui tentang topik ini?",
+    "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+    "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+  ],
+  "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+  "materi": "## 1. Komponen sistem komputer\n\nSistem komputer terdiri atas **hardware** (perangkat keras), **software** (perangkat lunak), dan **brainware** (manusia yang menggunakan atau mengelola komputer). Ketiganya saling membutuhkan.\n\n## 2. Perangkat keras\n\n- **Input:** keyboard, mouse, kamera, mikrofon.\n- **Process:** CPU dan komponen pemroses.\n- **Output:** monitor, printer, speaker.\n- **Memori utama:** RAM, tempat data dan instruksi yang sedang dipakai disimpan sementara (hilang saat komputer mati).\n- **Penyimpanan (storage):** SSD, HDD, flashdisk, yang menyimpan data lebih permanen.\n\n## 3. Perangkat lunak dan sistem operasi\n\nSoftware adalah instruksi yang mengatur kerja komputer. Sistem operasi seperti Windows, Linux, macOS, dan Android mengelola sumber daya komputer serta menjadi penghubung pengguna dengan perangkat keras dan aplikasi.\n\n## 4. CPU dan memori\n\nCPU menjalankan instruksi dan mengendalikan proses. RAM menyimpan sementara data dan instruksi yang sedang digunakan. Kapasitas dan kecepatan komponen memengaruhi kinerja komputer.\n\n## 5. Alur kerja komputer\n\nData masuk melalui perangkat input, diproses oleh CPU dengan bantuan memori, hasil ditampilkan melalui perangkat output, dan data dapat disimpan ke media penyimpanan untuk digunakan kembali.",
+  "materi_tautan": [],
+  "video": [],
+  "praktik": "## Menelusuri Alur Kerja Komputer\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Amati satu perangkat (komputer, laptop, atau ponsel). Daftarkan minimal tiga perangkat input, satu unit pemroses, tiga perangkat output, dan dua media penyimpanan.\n2. Lihat spesifikasinya (melalui Pengaturan atau Task Manager): prosesor, kapasitas RAM, kapasitas penyimpanan, dan sistem operasi.\n3. Gambar diagram alur saat kamu mengetik dan menyimpan dokumen: input → proses → output → penyimpanan.\n4. Jika komputer menjadi lambat saat banyak program dibuka, komponen apa yang perlu ditingkatkan? Jelaskan alasannya.\n\n**Produk:** tabel komponen, spesifikasi perangkat, diagram alur, dan analisis singkat.",
+  "praktik_tautan": [],
+  "kuis": [
+    {
+      "pertanyaan": "Komponen yang menjalankan instruksi dan mengendalikan proses pada komputer adalah ...",
+      "opsi_a": "Monitor",
+      "opsi_b": "CPU",
+      "opsi_c": "SSD",
+      "opsi_d": "Mouse",
+      "jawaban": "b",
+      "pembahasan": "CPU adalah unit pemroses yang menjalankan instruksi dan mengendalikan proses."
+    },
+    {
+      "pertanyaan": "Data dan instruksi yang sedang dipakai program disimpan sementara di ... dan hilang saat komputer dimatikan.",
+      "opsi_a": "RAM",
+      "opsi_b": "SSD",
+      "opsi_c": "Flashdisk",
+      "opsi_d": "Kartu memori",
+      "jawaban": "a",
+      "pembahasan": "RAM adalah memori kerja yang bersifat sementara. SSD, flashdisk, dan kartu memori menyimpan data lebih permanen."
+    },
+    {
+      "pertanyaan": "Contoh brainware adalah ...",
+      "opsi_a": "Sistem operasi Linux",
+      "opsi_b": "Motherboard",
+      "opsi_c": "Operator yang mengelola komputer",
+      "opsi_d": "Aplikasi pengolah kata",
+      "jawaban": "c",
+      "pembahasan": "Brainware adalah manusia yang menggunakan atau mengelola komputer. Motherboard adalah hardware, sedangkan sistem operasi dan aplikasi adalah software."
+    },
+    {
+      "pertanyaan": "Kamu mengetik kalimat di keyboard, lalu kalimat itu tampil di layar. Urutan alur kerja komputer yang tepat adalah ...",
+      "opsi_a": "Output → proses → input",
+      "opsi_b": "Proses → input → output",
+      "opsi_c": "Input → output → proses",
+      "opsi_d": "Input → proses → output",
+      "jawaban": "d",
+      "pembahasan": "Data masuk lewat perangkat input, diproses oleh CPU, lalu hasilnya ditampilkan lewat perangkat output."
+    },
+    {
+      "pertanyaan": "Fungsi utama sistem operasi adalah ...",
+      "opsi_a": "Hanya berfungsi untuk mencetak dan memindai dokumen",
+      "opsi_b": "Mengelola sumber daya dan menghubungkan pengguna dengan perangkat keras",
+      "opsi_c": "Mempercepat koneksi internet tanpa perangkat jaringan",
+      "opsi_d": "Menggantikan seluruh perangkat keras agar komputer lebih murah",
+      "jawaban": "b",
+      "pembahasan": "Sistem operasi seperti Windows, Linux, macOS, dan Android mengelola sumber daya komputer serta menjadi penghubung pengguna, aplikasi, dan hardware."
+    }
+  ],
+  "rubrik": [
+    {
+      "aspek": "Ketepatan konsep",
+      "s4": "Semua konsep tepat dan disertai contoh",
+      "s3": "Sebagian besar konsep tepat",
+      "s2": "Sebagian kecil tepat, ada miskonsepsi",
+      "s1": "Banyak konsep keliru"
+    },
+    {
+      "aspek": "Kelengkapan produk",
+      "s4": "Semua langkah dan produk lengkap",
+      "s3": "Kurang satu langkah",
+      "s2": "Kurang beberapa langkah",
+      "s1": "Sebagian besar kosong"
+    },
+    {
+      "aspek": "Penerapan dan kreativitas",
+      "s4": "Contoh orisinal dan relevan dengan kehidupan",
+      "s3": "Contoh relevan",
+      "s2": "Contoh umum, mengikuti materi",
+      "s1": "Tidak ada contoh"
+    },
+    {
+      "aspek": "Kejujuran dan waktu",
+      "s4": "Karya sendiri, tepat waktu",
+      "s3": "Karya sendiri, sedikit terlambat",
+      "s2": "Sebagian meniru, terlambat",
+      "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+    }
+  ],
+  "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+  "asesmen_tautan": []
+}

@@ -2,7 +2,27 @@
   "guru": "",
   "sekolah": "",
   "tahun": "2026/2027",
-  "whatsapp": "",
-  "form": "",
-  "padlet": ""
+  "kontak": [
+    {
+      "aktif": true,
+      "jenis": "whatsapp",
+      "judul": "Tanya via WhatsApp",
+      "ket": "Kirim pertanyaan langsung ke guru",
+      "tautan": ""
+    },
+    {
+      "aktif": true,
+      "jenis": "tautan",
+      "judul": "Isi Formulir Pertanyaan",
+      "ket": "Google Form tanya jawab",
+      "tautan": ""
+    },
+    {
+      "aktif": true,
+      "jenis": "tautan",
+      "judul": "Forum Diskusi (Padlet)",
+      "ket": "Lihat dan tulis pertanyaan bersama",
+      "tautan": ""
+    }
+  ]
 }

@@ -1,0 +1,107 @@
+{
+  "tampil": true,
+  "judul": "Informatika untuk Masa Depan",
+  "ringkas": "Peran informatika, teknologi masa depan, etika, dan keterampilan digital.",
+  "pengantar": "Informatika hadir dalam kehidupan sehari-hari, dunia kerja, pendidikan, layanan publik, dan perkembangan teknologi masa depan.",
+  "mapel": "Informatika",
+  "kelas": "X / Fase E",
+  "alokasi": "2 × 45 menit",
+  "tujuan": [
+    "Menjelaskan peran informatika dalam kehidupan dan masyarakat.",
+    "Mengenali perkembangan teknologi digital dan peluang masa depan.",
+    "Menjelaskan pentingnya etika, tanggung jawab, dan literasi digital.",
+    "Mengidentifikasi keterampilan yang diperlukan untuk menghadapi perubahan teknologi."
+  ],
+  "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+  "pemantik_pengantar": "Bayangkan satu pagimu: alarm di ponsel, peta menuju sekolah, belajar daring, lalu membayar jajan dengan dompet digital. Berapa banyak layanan digital yang sudah kamu pakai sebelum siang?",
+  "pemantik": [
+    "Apa yang sudah kamu ketahui tentang topik ini?",
+    "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+    "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+  ],
+  "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+  "materi": "## 1. Apa itu informatika?\n\nInformatika adalah bidang ilmu yang mempelajari komputasi, pengolahan informasi, sistem komputer, data, algoritma, dan dampaknya bagi manusia. Informatika tidak hanya tentang menggunakan komputer, tetapi juga memahami cara teknologi dirancang dan dimanfaatkan untuk memecahkan masalah.\n\n## 2. Informatika di sekitar kita\n\nContohnya adalah layanan perbankan digital, peta dan navigasi, pembelajaran daring, layanan kesehatan, perdagangan elektronik, transportasi, serta komunikasi. Teknologi membantu pekerjaan menjadi lebih cepat, tetapi pengguna tetap perlu memeriksa kebenaran informasi dan menjaga data pribadi.\n\n## 3. Perkembangan dan peluang masa depan\n\n- **Kecerdasan buatan (AI):** membantu mengenali pola, membuat rekomendasi, dan mendukung pekerjaan.\n- **Internet of Things (IoT):** menghubungkan benda fisik dengan jaringan untuk mengirim atau menerima data.\n- **Komputasi awan:** layanan penyimpanan dan pemrosesan melalui internet.\n- **Robotika dan otomasi:** membantu pekerjaan berulang atau berisiko.\n- **Keamanan siber:** melindungi sistem, jaringan, dan data dari ancaman.\n\n## 4. Etika dan tanggung jawab digital\n\nGunakan teknologi secara jujur, santun, dan bertanggung jawab. Hormati hak cipta, cantumkan sumber, jangan menyebarkan hoaks, hindari perundungan siber, dan jangan membagikan data pribadi orang lain tanpa izin.\n\n## 5. Keterampilan masa depan\n\nKeterampilan penting meliputi berpikir kritis, kreativitas, komunikasi, kolaborasi, pemecahan masalah, literasi data, literasi digital, dan kemauan belajar sepanjang hayat. Teknologi dapat berubah, sehingga kemampuan beradaptasi sangat diperlukan.",
+  "materi_tautan": [],
+  "video": [],
+  "praktik": "## Peta Informatika di Sekitarku\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Pilih tiga layanan digital yang kamu pakai seminggu terakhir (misalnya peta, belajar daring, pembayaran digital).\n2. Untuk tiap layanan, tulis: masalah yang dibantu diselesaikan, data apa yang dipakai, dan satu risiko privasi atau etika.\n3. Pilih satu teknologi masa depan (AI, IoT, komputasi awan, robotika, atau keamanan siber), lalu jelaskan bagaimana teknologi itu dapat mengubah salah satu layanan tadi.\n4. Rumuskan tiga aturan pribadimu agar memakai teknologi dengan jujur, aman, dan bertanggung jawab.\n\n**Produk:** tabel tiga layanan beserta tiga aturan pribadi.",
+  "praktik_tautan": [],
+  "kuis": [
+    {
+      "pertanyaan": "Mengapa memahami informatika penting bagi generasi muda?",
+      "opsi_a": "Agar bisa memakai semua aplikasi tanpa perlu tahu cara kerjanya",
+      "opsi_b": "Agar pekerjaan manusia dapat sepenuhnya digantikan perangkat digital",
+      "opsi_c": "Agar mampu memahami, menilai, dan memanfaatkan teknologi dengan bertanggung jawab",
+      "opsi_d": "Agar tidak perlu lagi mempelajari keterampilan nonteknis seperti komunikasi",
+      "jawaban": "c",
+      "pembahasan": "Informatika bukan sekadar memakai perangkat. Kita perlu memahami cara kerja teknologi agar dapat menilai dan memanfaatkannya secara bertanggung jawab."
+    },
+    {
+      "pertanyaan": "Sensor suhu, lampu pintar, dan jam tangan pintar yang terhubung ke jaringan untuk mengirim dan menerima data merupakan contoh ...",
+      "opsi_a": "Robotika",
+      "opsi_b": "Komputasi awan",
+      "opsi_c": "Kecerdasan buatan (AI)",
+      "opsi_d": "Internet of Things (IoT)",
+      "jawaban": "d",
+      "pembahasan": "IoT menghubungkan benda fisik ke jaringan agar dapat bertukar data. Komputasi awan adalah layanan penyimpanan dan pemrosesan lewat internet, sedangkan AI berfokus pada pengenalan pola dan rekomendasi."
+    },
+    {
+      "pertanyaan": "Tindakan yang mencerminkan etika digital adalah ...",
+      "opsi_a": "Meminta izin dan mencantumkan sumber saat memakai karya orang lain",
+      "opsi_b": "Membagikan tangkapan layar percakapan pribadi agar teman lain ikut menilai",
+      "opsi_c": "Menyalin tulisan dari internet lalu mengakuinya sebagai karya sendiri",
+      "opsi_d": "Meminjamkan kata sandi akun kelas kepada teman supaya tugasnya cepat selesai",
+      "jawaban": "a",
+      "pembahasan": "Etika digital berarti menghormati hak cipta dan privasi orang lain serta menjaga keamanan akun."
+    },
+    {
+      "pertanyaan": "Teknologi terus berubah. Sikap yang paling membantu kita menghadapinya adalah ...",
+      "opsi_a": "Menguasai satu aplikasi saja dan menolak mencoba yang lain",
+      "opsi_b": "Terus belajar, beradaptasi, dan mengasah berpikir kritis",
+      "opsi_c": "Menunggu bertahun-tahun sampai teknologi baru benar-benar stabil",
+      "opsi_d": "Mengandalkan teman untuk mengerjakan semua urusan digital",
+      "jawaban": "b",
+      "pembahasan": "Karena teknologi cepat berubah, kemampuan belajar sepanjang hayat dan beradaptasi lebih penting daripada menguasai satu alat saja."
+    },
+    {
+      "pertanyaan": "Cara yang tepat memakai AI untuk membantu belajar adalah ...",
+      "opsi_a": "Menyalin hasilnya apa adanya karena AI pasti benar",
+      "opsi_b": "Memasukkan data pribadi teman agar jawabannya lebih sesuai",
+      "opsi_c": "Memeriksa hasilnya, menyebutkan penggunaannya, dan tetap berpikir sendiri",
+      "opsi_d": "Memakainya agar tidak perlu memahami materi sama sekali",
+      "jawaban": "c",
+      "pembahasan": "AI bisa keliru. Hasilnya perlu diperiksa, penggunaannya disebutkan secara jujur, dan data pribadi orang lain tidak boleh dimasukkan sembarangan."
+    }
+  ],
+  "rubrik": [
+    {
+      "aspek": "Ketepatan konsep",
+      "s4": "Semua konsep tepat dan disertai contoh",
+      "s3": "Sebagian besar konsep tepat",
+      "s2": "Sebagian kecil tepat, ada miskonsepsi",
+      "s1": "Banyak konsep keliru"
+    },
+    {
+      "aspek": "Kelengkapan produk",
+      "s4": "Semua langkah dan produk lengkap",
+      "s3": "Kurang satu langkah",
+      "s2": "Kurang beberapa langkah",
+      "s1": "Sebagian besar kosong"
+    },
+    {
+      "aspek": "Penerapan dan kreativitas",
+      "s4": "Contoh orisinal dan relevan dengan kehidupan",
+      "s3": "Contoh relevan",
+      "s2": "Contoh umum, mengikuti materi",
+      "s1": "Tidak ada contoh"
+    },
+    {
+      "aspek": "Kejujuran dan waktu",
+      "s4": "Karya sendiri, tepat waktu",
+      "s3": "Karya sendiri, sedikit terlambat",
+      "s2": "Sebagian meniru, terlambat",
+      "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+    }
+  ],
+  "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+  "asesmen_tautan": []
+}

@@ -1,0 +1,108 @@
+{
+  "tampil": true,
+  "judul": "Jaringan Komputer dan Internet",
+  "ringkas": "Jenis jaringan, perangkat jaringan, IP, DNS, protokol, WWW, dan keamanan internet.",
+  "pengantar": "Jaringan komputer menghubungkan perangkat agar dapat bertukar data dan berbagi sumber daya. Internet menghubungkan berbagai jaringan di seluruh dunia.",
+  "mapel": "Informatika",
+  "kelas": "X / Fase E",
+  "alokasi": "2 × 45 menit",
+  "tujuan": [
+    "Menjelaskan manfaat dan jenis jaringan komputer.",
+    "Mengidentifikasi perangkat jaringan dan fungsinya.",
+    "Menjelaskan alamat IP, DNS, WWW, dan protokol komunikasi.",
+    "Menjelaskan alur sederhana saat perangkat mengakses situs web.",
+    "Menerapkan kebiasaan aman saat menggunakan internet."
+  ],
+  "kriteria": "mampu menjelaskan konsep utama bab, menerapkannya dalam contoh, dan menyelesaikan latihan dengan benar.",
+  "pemantik_pengantar": "Jaringan komputer menghubungkan perangkat agar dapat bertukar data dan berbagi sumber daya. Internet menghubungkan berbagai jaringan di seluruh dunia.",
+  "pemantik": [
+    "Apa yang sudah kamu ketahui tentang topik ini?",
+    "Di mana kamu menemukan penerapannya dalam kehidupan sehari-hari?",
+    "Masalah apa yang dapat diselesaikan dengan pengetahuan ini?"
+  ],
+  "pemantik_catatan": "Diskusikan jawaban awal bersama teman. Setelah belajar, periksa kembali pemahamanmu.",
+  "materi": "## 1. Jenis jaringan\n\n- **PAN:** jaringan pribadi jarak dekat, misalnya Bluetooth.\n- **LAN:** jaringan area terbatas seperti laboratorium sekolah.\n- **MAN:** jaringan dalam cakupan wilayah kota.\n- **WAN:** jaringan area luas antarkota atau antarwilayah.\n\n## 2. Perangkat jaringan\n\n- **Modem:** menghubungkan jaringan pelanggan ke layanan penyedia internet.\n- **Router:** meneruskan paket data antarjaringan.\n- **Switch:** menghubungkan perangkat dalam satu LAN.\n- **Access Point:** menyediakan koneksi Wi-Fi.\n- **NIC:** antarmuka jaringan pada perangkat.\n\n## 3. IP address dan DNS\n\nAlamat IP digunakan untuk mengenali perangkat/antarmuka dalam jaringan. DNS membantu menerjemahkan nama domain menjadi alamat IP agar perangkat dapat menemukan server yang dituju.\n\n## 4. Protokol komunikasi\n\nTCP/IP menjadi dasar komunikasi internet. HTTP/HTTPS digunakan untuk pertukaran data web, SMTP untuk pengiriman email, dan FTP untuk transfer berkas. HTTPS menambahkan perlindungan enkripsi melalui TLS.\n\n## 5. WWW dan cara kerja akses situs\n\nWWW (World Wide Web) adalah layanan informasi di internet yang diakses melalui browser. Saat alamat situs dimasukkan, browser mencari alamat IP melalui DNS, mengirim permintaan ke server menggunakan HTTP/HTTPS, menerima respons, lalu menampilkan halaman.\n\n## 6. Keamanan berinternet\n\n- Gunakan kata sandi kuat dan berbeda untuk akun penting.\n- Aktifkan autentikasi dua faktor jika tersedia.\n- Jangan membagikan OTP atau kata sandi.\n- Periksa alamat situs dan waspadai phishing.\n- Hindari mengunduh file dari sumber tidak tepercaya.\n- Berhati-hati saat menggunakan Wi-Fi publik.",
+  "materi_tautan": [],
+  "video": [],
+  "praktik": "## Simulasi Jaringan dan Keamanan Akun\n\n**Petunjuk:** bacalah basmalah sebelum memulai kegiatan. Kerjakan dengan teliti dan jujur.\n\n1. Gambar topologi sederhana jaringan lab atau rumahmu: modem, router, switch/access point, dan minimal empat perangkat. Beri label jenis jaringannya (LAN/WAN).\n2. Tuliskan urutan langkah yang terjadi ketika kamu membuka sebuah situs (DNS, alamat IP, permintaan HTTP/HTTPS, respons).\n3. Periksa tiga kebiasaan keamanan akunmu (kata sandi, autentikasi dua faktor, kewaspadaan terhadap tautan) dan buat rencana perbaikan.\n4. Buat poster atau infografis singkat berisi tiga ciri pesan phishing.\n\n**Produk:** gambar topologi, uraian langkah akses situs, rencana keamanan, dan poster/infografis.",
+  "praktik_tautan": [],
+  "kuis": [
+    {
+      "pertanyaan": "Jaringan komputer di laboratorium sekolah termasuk jenis ...",
+      "opsi_a": "WAN",
+      "opsi_b": "LAN",
+      "opsi_c": "MAN",
+      "opsi_d": "PAN",
+      "jawaban": "b",
+      "pembahasan": "LAN mencakup area terbatas seperti laboratorium, gedung, atau sekolah. PAN lebih kecil (pribadi), MAN seukuran kota, dan WAN antarwilayah."
+    },
+    {
+      "pertanyaan": "Perangkat yang menghubungkan beberapa komputer dalam satu jaringan LAN adalah ...",
+      "opsi_a": "Modem",
+      "opsi_b": "Scanner",
+      "opsi_c": "Switch",
+      "opsi_d": "Webcam",
+      "jawaban": "c",
+      "pembahasan": "Switch menghubungkan perangkat dalam satu LAN. Router meneruskan paket antarjaringan, sedangkan modem menghubungkan ke penyedia internet."
+    },
+    {
+      "pertanyaan": "Saat kamu mengetik nama situs di browser, layanan yang menerjemahkan nama domain menjadi alamat IP adalah ...",
+      "opsi_a": "DNS",
+      "opsi_b": "SMTP",
+      "opsi_c": "FTP",
+      "opsi_d": "Access Point",
+      "jawaban": "a",
+      "pembahasan": "DNS menerjemahkan nama domain menjadi alamat IP agar browser dapat menemukan server yang dituju."
+    },
+    {
+      "pertanyaan": "Alamat situs berawalan https:// menunjukkan bahwa ...",
+      "opsi_a": "Situs tersebut pasti bebas dari penipuan",
+      "opsi_b": "Data antara browser dan server dienkripsi",
+      "opsi_c": "Situs tersebut milik instansi pemerintah",
+      "opsi_d": "Situs dapat dibuka tanpa koneksi internet",
+      "jawaban": "b",
+      "pembahasan": "HTTPS mengenkripsi data lewat TLS. Namun situs penipuan juga bisa memakai HTTPS, jadi tetap periksa alamat dan sumber situs."
+    },
+    {
+      "pertanyaan": "Kamu menerima pesan: “Akunmu akan diblokir, klik tautan ini dan masukkan kata sandi.” Tindakan yang tepat adalah ...",
+      "opsi_a": "Mengikuti perintah itu agar akun tidak diblokir",
+      "opsi_b": "Meneruskannya ke teman agar mereka ikut waspada",
+      "opsi_c": "Membalas dan menanyakan siapa pengirimnya",
+      "opsi_d": "Tidak mengeklik tautan, memeriksa pengirim, dan melaporkan pesan",
+      "jawaban": "d",
+      "pembahasan": "Pesan mendesak yang meminta kata sandi adalah ciri phishing. Jangan klik tautannya, jangan bagikan OTP atau kata sandi, dan laporkan pesannya."
+    }
+  ],
+  "rubrik": [
+    {
+      "aspek": "Ketepatan konsep",
+      "s4": "Semua konsep tepat dan disertai contoh",
+      "s3": "Sebagian besar konsep tepat",
+      "s2": "Sebagian kecil tepat, ada miskonsepsi",
+      "s1": "Banyak konsep keliru"
+    },
+    {
+      "aspek": "Kelengkapan produk",
+      "s4": "Semua langkah dan produk lengkap",
+      "s3": "Kurang satu langkah",
+      "s2": "Kurang beberapa langkah",
+      "s1": "Sebagian besar kosong"
+    },
+    {
+      "aspek": "Penerapan dan kreativitas",
+      "s4": "Contoh orisinal dan relevan dengan kehidupan",
+      "s3": "Contoh relevan",
+      "s2": "Contoh umum, mengikuti materi",
+      "s1": "Tidak ada contoh"
+    },
+    {
+      "aspek": "Kejujuran dan waktu",
+      "s4": "Karya sendiri, tepat waktu",
+      "s3": "Karya sendiri, sedikit terlambat",
+      "s2": "Sebagian meniru, terlambat",
+      "s1": "Meniru seluruhnya atau tidak dikumpulkan"
+    }
+  ],
+  "rubrik_catatan": "Nilai LKPD = jumlah skor ÷ 16 × 100. Nilai kuis = jumlah jawaban benar ÷ 5 × 100. Contoh nilai akhir bab: 60% LKPD + 40% kuis (dapat disesuaikan guru).",
+  "asesmen_tautan": []
+}

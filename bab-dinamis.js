@@ -87,11 +87,20 @@
     });
     return box;
   }
+  var MAX_BAB = 12;
   function loadJSON() {
-    return fetch('daftar-bab.json', { cache: 'no-cache' }).then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    }).then(function (j) { return listOf(j && j.bab).filter(function (x) { return x && str(x.judul); }); });
+    var jobs = [];
+    for (var i = 1; i <= MAX_BAB; i++) {
+      jobs.push((function (slot) {
+        return fetch('bab-' + slot + '.json', { cache: 'no-cache' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (j) { if (j) j.slot = slot; return j; })
+          .catch(function () { return null; });
+      })(i));
+    }
+    return Promise.all(jobs).then(function (all) {
+      return all.filter(function (x) { return x && str(x.judul) && x.tampil !== false; });
+    });
   }
 
   /* --- 1) Beranda: kartu semua bab --- */
@@ -105,7 +114,7 @@
         card.appendChild(mk('div', 'num', (n < 10 ? '0' : '') + n));
         card.appendChild(mk('h3', '', str(it.judul)));
         card.appendChild(mk('p', 'desc', str(it.ringkas) || 'Materi, aktivitas, dan latihan.'));
-        var a = mk('a', 'btn', 'Masuk Bab ' + n + ' →'); a.href = 'bab.html?b=' + n;
+        var a = mk('a', 'btn', 'Masuk Bab ' + n + ' →'); a.href = 'bab.html?b=' + it.slot;
         card.appendChild(a);
         grid.appendChild(card);
       });
@@ -114,11 +123,12 @@
 
   /* --- 2) Halaman bab.html --- */
   function renderBab(root) {
-    var n = parseInt((window.location.search.match(/[?&]b=(\d+)/) || [])[1], 10);
+    var slot = parseInt((window.location.search.match(/[?&]b=(\d+)/) || [])[1], 10);
     loadJSON().then(function (items) {
-      var it = items[n - 1];
-      if (!n || !it) throw new Error('tidak ada');
-      build(root, n, it, items);
+      var pos = -1;
+      items.forEach(function (x, i) { if (x.slot === slot) pos = i; });
+      if (!slot || pos < 0) throw new Error('tidak ada');
+      build(root, pos + 1, items[pos], items);
     }).catch(function () {
       var box = mk('main', 'content');
       box.style.padding = '60px 24px';
@@ -283,7 +293,7 @@
     var rf = mk('div', 'reflect');
     [['Hal baru yang saya pahami adalah ...', 'r1'], ['Bagian yang masih perlu saya pelajari adalah ...', 'r2'], ['Penerapan materi ini dalam kehidupan saya adalah ...', 'r3']].forEach(function (r) {
       var lb = mk('label', '', r[0]); lb.setAttribute('for', r[1]);
-      var ta = document.createElement('textarea'); ta.id = r[1]; ta.rows = 3; ta.setAttribute('data-save', 'bab' + n + '-' + r[1]);
+      var ta = document.createElement('textarea'); ta.id = r[1]; ta.rows = 3; ta.setAttribute('data-save', 'bab' + (it.slot || n) + '-' + r[1]);
       rf.appendChild(lb); rf.appendChild(ta);
     });
     var qa = mk('div', 'quiz-actions'), pb = mk('button', 'btn btn-dark', 'Cetak / simpan PDF'); pb.type = 'button'; pb.id = 'printBtn';
@@ -304,12 +314,12 @@
     if (n === 1) {
       prev.href = 'index.html'; prev.appendChild(mk('span', '', '← Beranda')); prev.appendChild(mk('strong', '', 'Daftar semua bab'));
     } else {
-      prev.href = 'bab.html?b=' + (n - 1); prev.appendChild(mk('span', '', '← Bab sebelumnya')); prev.appendChild(mk('strong', '', str(items[n - 2].judul)));
+      prev.href = 'bab.html?b=' + items[n - 2].slot; prev.appendChild(mk('span', '', '← Bab sebelumnya')); prev.appendChild(mk('strong', '', str(items[n - 2].judul)));
     }
     pager.appendChild(prev);
     var nx = items[n], next = mk('a', 'next');
     if (nx) {
-      next.href = 'bab.html?b=' + (n + 1); next.appendChild(mk('span', '', 'Bab berikutnya →')); next.appendChild(mk('strong', '', str(nx.judul)));
+      next.href = 'bab.html?b=' + nx.slot; next.appendChild(mk('span', '', 'Bab berikutnya →')); next.appendChild(mk('strong', '', str(nx.judul)));
     } else {
       next.href = 'index.html'; next.appendChild(mk('span', '', 'Selesai →')); next.appendChild(mk('strong', '', 'Kembali ke beranda'));
     }
